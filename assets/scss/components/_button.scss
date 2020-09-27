@@ -1,0 +1,22 @@
+.btn {
+  width: 170px;
+  padding: 6px 20px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  border: 1px solid #c3c3c3;
+  border-radius: 50px;
+  background-color: transparent;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.btn-main {
+  border: 1px solid #ffdd00;
+  background-color: #ffdd00;
+}

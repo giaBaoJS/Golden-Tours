@@ -88,61 +88,98 @@
           }
         }
         .form {
-          .item {
-            padding: 20px 15px;
-            display: flex;
-            align-items: center;
-            border-bottom: 1px solid #dfdfdf;
-            .content {
-              margin-left: 20px;
-              label {
-                font-size: 15px;
-                margin-bottom: 3px;
-                color: #5e6d77;
+          .wrapper-items{
+            .item {
+              padding: 20px 15px;
+              display: flex;
+              align-items: center;
+              border-bottom: 1px solid #dfdfdf;
+              .content {
+                margin-left: 20px;
+                label {
+                  font-size: 15px;
+                  margin-bottom: 3px;
+                  color: #5e6d77;
+                }
+                input {
+                  border: none;
+                  &:focus {
+                    outline: none;
+                  }
+                  &::placeholder {
+                    color: #5191fa;
+                    font-size: 14px;
+                  }
+                }
+                #checkin,
+                #checkout {
+                  margin-top: 5px;
+                  color: #5191fa;
+                  font-size: 14px;
+                  cursor: pointer;
+                }
               }
-              input {
+              .arrow-date {
+                cursor: pointer;
+                position: absolute;
+                right: 40px;
+                color: #5e6d77;
+                font-size: 20px;
+                i {
+                  font-family: "FontAwesome";
+                }
+              }
+              button {
+                width: 100%;
+                color: #fff;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                padding: 15px 0;
                 border: none;
+                border-radius: 5px;
+                background-color: #5191fa;
+                cursor: pointer;
                 &:focus {
                   outline: none;
                 }
-                &::placeholder {
-                  color: #5191fa;
+              }
+            
+            }
+            .dropdown-place{
+              overflow: hidden scroll;
+              padding: 10px 0 20px 0;
+              border-radius: 3px;
+              border: 2px solid #c6c6c6;
+              max-height: 332px;
+              outline: none;
+              display: block;
+              li{
+                padding: 10px 0;
+                cursor: pointer;
+                span{
                   font-size: 14px;
+                  padding-left: 60px;
+                }
+                &:hover{
+                  background: #f5f4f7;
                 }
               }
-              #checkin,
-              #checkout {
-                margin-top: 5px;
-                color: #5191fa;
-                font-size: 14px;
-                cursor: pointer;
+              &::-webkit-scrollbar {
+                width: 5px;
+                background-color: transparent;
               }
-            }
-            .arrow-date {
-              cursor: pointer;
-              position: absolute;
-              right: 40px;
-              color: #5e6d77;
-              font-size: 20px;
-              i {
-                font-family: "FontAwesome";
+              &::-webkit-scrollbar-track {
+                border-radius: 10px;
               }
-            }
-            button {
-              width: 100%;
-              color: #fff;
-              font-weight: bold;
-              letter-spacing: 0.5px;
-              padding: 15px 0;
-              border: none;
-              border-radius: 5px;
-              background-color: #5191fa;
-              cursor: pointer;
-              &:focus {
-                outline: none;
+              &:hover{
+                &::-webkit-scrollbar-thumb {
+                  background: #c4c7ca;
+                  border-radius: 10px;
+                }
               }
             }
           }
+          
         }
       }
       .filter-items {

@@ -1,3 +1,40 @@
+#header {
+  .wrapper-topbar {
+    background-color: #004052;
+    .topbar {
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-left,
+      &-right {
+        display: flex;
+        li {
+          padding: 0 20px;
+          border-right: 1px solid #fff;
+          color: #fff;
+          &:last-child {
+            border: none;
+          }
+          a {
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+          }
+        }
+      }
+      &-left {
+        li {
+          a {
+            padding: 0 10px;
+          }
+        }
+      }
+      &-right {
+      }
+    }
+  }
+}
 .wrapper-home {
   .about-us {
     padding: 100px 0;
@@ -488,6 +525,22 @@ footer {
   }
 }
 @media screen and (max-width: 480px) {
+  #header {
+    .wrapper-topbar {
+      .topbar {
+        li {
+          border: none;
+          padding: 0 15px;
+        }
+        &-left {
+          display: inline-block;
+          .header-mail {
+            display: none;
+          }
+        }
+      }
+    }
+  }
   .wrapper-home {
     .about-us {
       .content {

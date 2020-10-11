@@ -1,0 +1,256 @@
+.wraper-partner {
+    .slider {
+        background: url("./../images/defaults/partner/slider-bg.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        position: relative;
+        width: 100%;
+        @include for-size(575) {
+            background-size: 650px;
+        }
+        .box-content {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 15rem;
+            .title-slider {
+                font-weight: 800;
+                color: #fff;
+                font-size: 34px;
+                text-align: center;
+                padding-bottom: 1rem;
+                h1 {
+                    font-size: 40px;
+                    @include for-size(991) {
+                        font-size: 30px;
+                    }
+                    @include for-size(575) {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .box-text {
+                color: #fff;
+                padding-bottom: 1rem;
+                @include for-size(991) {
+                    text-align: center;
+                }
+            }
+            a {
+                background: #fa5535;
+                border-radius: 5px;
+                width: 250px;
+                height: 60px;
+                color: #fff;
+                font-size: 30px;
+                line-height: 40px;
+                text-align: center;
+                margin: 0 auto;
+                @include for-size(991) {
+                    width: 180px;
+                    height: 45px;
+                    font-size: 25px;
+                    line-height: unset;
+                }
+                @include for-size(575) {
+                    height: 150px;
+                    height: 40px;
+                    font-size: 20px;
+                }
+                &:hover {
+                    background: #d63a1c;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .title {
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        padding: 3rem;
+        h1 {
+            font-size: 40px;
+            @include for-size(991) {
+                font-size: 30px;
+            }
+        }
+    }
+    .section-2 {
+        padding-bottom: 5rem;
+        .box-text {
+            @include for-size(575) {
+                padding-bottom: 2rem;
+            }
+            p {
+                span {
+                    font-weight: 100;
+                }
+                @include for-size(991) {
+                    font-size: 18px;
+                }
+                @include for-size(575) {
+                    font-size: 16px;
+                }
+            }
+            margin-left: 3rem;
+            &::after {
+                content: "";
+                left: 0px;
+                top: 0px;
+                height: 100px;
+                width: 100%;
+                position: absolute;
+                @include for-size(575) {
+                    left: 16px;
+                }
+            }
+            &.bg-1 {
+                &::after {
+                    background: url("./../images/defaults/partner/icon-1.png") no-repeat;
+                    @include for-size(991) {
+                        background-size: 60px;
+                    }
+                    @include for-size(575) {
+                        background-size: 40px;
+                    }
+                }
+            }
+            &.bg-2 {
+                &::after {
+                    background: url("./../images/defaults/partner/icon-2.png") no-repeat;
+                    @include for-size(991) {
+                        background-size: 60px;
+                    }
+                    @include for-size(575) {
+                        background-size: 40px;
+                    }
+                }
+            }
+            &.bg-3 {
+                &::after {
+                    background: url("./../images/defaults/partner/icon-3.png") no-repeat;
+                    @include for-size(991) {
+                        background-size: 60px;
+                    }
+                    @include for-size(575) {
+                        background-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+    .section-4 {
+        background: url("./../images/defaults/background/benefit.png") no-repeat;
+        background-size: cover;
+        @include for-size(1199) {
+            background-position: center;
+        }
+        .title-section-4 {
+            padding-top: 6rem;
+            @include for-size(575) {
+                padding-top: 9rem;
+            }
+            h1 {
+                font-weight: 100;
+                color: #4a4a4a;
+                font-size: 34px;
+                text-align: center;
+                padding: 1rem 0rem;
+            }
+            p {
+                color: #4a4a4a;
+                text-align: center;
+                padding-bottom: 3rem;
+            }
+        }
+        .box-content {
+            .title-box {
+                padding-bottom: 3rem;
+                color: #4a4a4a;
+                position: relative;
+                padding-left: 5rem;
+                &::after {
+                    content: "";
+                    left: -20px;
+                    top: 0px;
+                    height: 100px;
+                    width: 100%;
+                    position: absolute;
+                }
+                &.bg-1 {
+                    background: url("./../images/defaults/partner/icon-benefit-01.png") no-repeat;
+                }
+                &.bg-2 {
+                    background: url("./../images/defaults/partner/icon-benefit-02.png") no-repeat;
+                }
+                &.bg-3 {
+                    background: url("./../images/defaults/partner/icon-benefit-03.png") no-repeat;
+                }
+                &.bg-4 {
+                    background: url("./../images/defaults/partner/icon-benefit-04.png") no-repeat;
+                }
+                &.bg-5 {
+                    background: url("./../images/defaults/partner/icon-benefit-05.png") no-repeat;
+                }
+                &.bg-6 {
+                    background: url("./../images/defaults/partner/icon-benefit-06.png") no-repeat;
+                }
+                h2 {
+                    padding-bottom: 1rem;
+                    font-weight: 600;
+                    color: #848484;
+                }
+                .box-text {
+                    line-height: 1.5rem;
+                }
+            }
+        }
+    }
+    .section-5 {
+        background: url("./../images/defaults/background/bg-duoicung.png") no-repeat;
+        background-size: cover;
+        background-position: center;
+        .my-partner {
+            background: #00000034;
+            padding-top: 4rem;
+            &:hover {
+                background: #0000006b;
+                transition: 2s;
+            }
+            img {
+                height: 100px;
+            }
+            .title-section-5 {
+                font-weight: 100;
+                color: #fff;
+                font-size: 34px;
+                text-align: center;
+                padding: 1rem 0rem;
+            }
+            .sub-partner {
+                padding: 2rem 0rem;
+                @include for-size(991) {
+                    padding-bottom: 0rem;
+                }
+                text-align: center;
+                .icon-partner {
+                    @include for-size(991) {
+                        padding-bottom: 2rem;
+                    }
+                    a {
+                        img {
+                            margin: 0 auto;
+                        }
+                    }
+                    h2 {
+                        text-align: center;
+                        color: #fff;
+                        padding-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

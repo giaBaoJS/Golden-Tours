@@ -3,7 +3,7 @@ jQuery(document).ready(function($) {
     $(".one-time-partner").slick({
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 400,
         slidesToShow: 1,
         adaptiveHeight: true,
         responsive: [{
@@ -12,6 +12,6 @@ jQuery(document).ready(function($) {
                 slidesToShow: 1,
                 slidesToScroll: 1,
             },
-        }, ],
+        }],
     });
 });

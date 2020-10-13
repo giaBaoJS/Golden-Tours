@@ -7,13 +7,17 @@
         position: relative;
         width: 100%;
         @include for-size(575) {
-            background-size: 650px;
+            background-size: 850px;
+            height: 500px;
         }
         .box-content {
             position: absolute;
             left: 50%;
             transform: translate(-50%);
             top: 15rem;
+            @include for-size(575) {
+                top: 12rem
+            }
             .title-slider {
                 font-weight: 800;
                 color: #fff;
@@ -213,8 +217,17 @@
         background-size: cover;
         background-position: center;
         .my-partner {
+            .slick-dots {
+                bottom: 0 !important;
+            }
+            .slick-prev:before,
+            .slick-next:before {
+                @include for-size(575) {
+                    opacity: 0;
+                }
+            }
             background: #00000034;
-            padding-top: 4rem;
+            padding-top: 1rem;
             &:hover {
                 background: #0000006b;
                 transition: 2s;

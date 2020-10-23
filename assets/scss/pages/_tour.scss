@@ -1,15 +1,4 @@
 .wrapper-tour {
-  .hero-banner {
-    padding: 100px 0;
-    background-image: url("./../images/defaults/tour.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    h2 {
-      color: #ffffff;
-      font-size: 50px;
-    }
-  }
   .tours {
     margin-top: 50px;
     a {
@@ -88,7 +77,7 @@
           }
         }
         .form {
-          .wrapper-items{
+          .wrapper-items {
             .item {
               padding: 20px 15px;
               display: flex;
@@ -143,9 +132,8 @@
                   outline: none;
                 }
               }
-            
             }
-            .dropdown-place{
+            .dropdown-place {
               overflow: hidden scroll;
               padding: 10px 0 20px 0;
               border-radius: 3px;
@@ -153,14 +141,14 @@
               max-height: 332px;
               outline: none;
               display: block;
-              li{
+              li {
                 padding: 10px 0;
                 cursor: pointer;
-                span{
+                span {
                   font-size: 14px;
                   padding-left: 60px;
                 }
-                &:hover{
+                &:hover {
                   background: #f5f4f7;
                 }
               }
@@ -171,7 +159,7 @@
               &::-webkit-scrollbar-track {
                 border-radius: 10px;
               }
-              &:hover{
+              &:hover {
                 &::-webkit-scrollbar-thumb {
                   background: #c4c7ca;
                   border-radius: 10px;
@@ -179,7 +167,6 @@
               }
             }
           }
-          
         }
       }
       .filter-items {

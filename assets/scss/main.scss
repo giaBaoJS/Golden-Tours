@@ -4,9 +4,14 @@
 @import "./core/_font.scss";
 @import "./core/_minxin.scss";
 //Components
+@import "./components/_common.scss";
 @import "./components/_button.scss";
+@import "./components/_filterNews.scss";
+@import "./components/_newsList.scss";
 //Page
 @import "./pages/_home.scss";
 @import "./pages/_tour.scss";
 @import "./pages/_contact.scss";
-@import "./pages/partner.scss";
+@import "./pages/_partner.scss";
+@import "./pages/_news.scss";
+@import "./pages/_newsDetail.scss";

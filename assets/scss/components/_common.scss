@@ -8,6 +8,9 @@
     color: #ffffff;
     font-size: 50px;
   }
+  @include media(768px) {
+    padding: 50px 0;
+  }
 }
 
 .list-tag {

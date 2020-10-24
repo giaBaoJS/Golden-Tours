@@ -16,6 +16,21 @@ jQuery(document).ready(function ($) {
       },
     ],
   });
+  $(".one-time-about").slick({
+    centerMode: true,
+    dots: true,
+    centerPadding: "100px",
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
 //Scroll to top
 $(window).scroll(function () {

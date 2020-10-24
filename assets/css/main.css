@@ -1766,6 +1766,225 @@ footer .copyright p {
   }
 }
 
+.wraper-about-us {
+  @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+}
+.wraper-about-us .border-bottom-title {
+  border-bottom: 1px solid #eaeef3;
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .wraper-about-us .border-bottom-title {
+    display: none;
+  }
+}
+.wraper-about-us .border-bottom-title .title-detial ul {
+  display: flex;
+  justify-content: start;
+  padding: 15px 0px;
+}
+.wraper-about-us .border-bottom-title .title-detial ul li ~ li::before {
+  content: ">";
+  width: 20px;
+  height: 20px;
+  padding-left: 10px;
+}
+.wraper-about-us .border-bottom-title .title-detial ul li a {
+  color: #1a2b48;
+}
+.wraper-about-us .section-1 {
+  padding-bottom: 2rem;
+}
+.wraper-about-us .section-1 .content-1 .box-text .sub-title {
+  padding: 1rem 0rem;
+}
+.wraper-about-us .section-1 .content-1 .box-text .sub-title h1 {
+  color: #5191fa;
+  font-size: 23px;
+}
+.wraper-about-us .section-1 .content-1 .box-text .text {
+  font-size: 16px;
+  color: #768092;
+  line-height: 24px;
+  font-family: sans-serif;
+}
+.wraper-about-us body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.wraper-about-us .tpk_card {
+  top: 50%;
+  height: 180px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.wraper-about-us .tpk_card .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+  border: 5px solid #5191fa;
+}
+.wraper-about-us .tpk_card .front h1 {
+  text-align: center;
+  font-size: 25px;
+  font-family: sans-serif;
+  padding-top: 1.5rem;
+}
+.wraper-about-us .tpk_card .front h1 span {
+  font-size: 40px;
+}
+.wraper-about-us .tpk_card:hover .front {
+  transform: rotateX(-180deg);
+}
+.wraper-about-us .tpk_card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5191fa;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+.wraper-about-us .tpk_card .back:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+.wraper-about-us .tpk_card:hover .back {
+  transform: rotateX(0deg);
+}
+.wraper-about-us .tpk_card .back .details {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.wraper-about-us .tpk_card .back .details h2 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 24px;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+}
+.wraper-about-us .tpk_card .back .details h2 span {
+  color: #a7a7a7;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+}
+.wraper-about-us .tpk_card .social-icons {
+  padding: 10px 0;
+}
+.wraper-about-us .tpk_card .social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.wraper-about-us .tpk_card .social-icons a .fab {
+  line-height: 36px;
+}
+.wraper-about-us .tpk_card .social-icons a:hover {
+  background: #e91e63;
+}
+.wraper-about-us .section-2 {
+  padding-bottom: 2rem;
+}
+.wraper-about-us .section-3 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.wraper-about-us .section-3 h2 {
+  margin: 0 auto;
+}
+.wraper-about-us .section-3 .sub-box img {
+  padding: 1rem 0rem;
+  width: 100px;
+}
+.wraper-about-us .section-3 .sub-box h2 {
+  color: #768092;
+}
+.wraper-about-us .section-3 .sub-box h2 span {
+  color: #1a2b48;
+  font-weight: bold;
+}
+.wraper-about-us .section-4 {
+  padding-bottom: 3rem;
+}
+.wraper-about-us .section-4 .one-time-about .slick-list {
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), color-stop(0.1, black), color-stop(0.9, black), to(rgba(0, 0, 0, 0.65)));
+}
+.wraper-about-us .section-4 .one-time-about .slick-dots {
+  bottom: 0px;
+}
+.wraper-about-us .section-4 .content {
+  width: 90%;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.wraper-about-us .section-4 .content .sub-box-img {
+  height: 500px;
+  padding: 0rem 0.3rem;
+}
+.wraper-about-us .section-4 .content .sub-box-img .img-1 {
+  background: url("./../images/defaults/about-us/gallary_1.jpg") no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+}
+.wraper-about-us .section-4 .content .sub-box-img .img-2 {
+  background: url("./../images/defaults/about-us/gallary_2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.wraper-about-us .section-4 .content .sub-box-img .img-3 {
+  background: url("./../images/defaults/about-us/gallary_3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.wraper-about-us .section-4 .content .sub-box-img .img-4 {
+  background: url("./../images/defaults/about-us/gallary_5-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.wraper-about-us .section-4 .content .sub-box-img .img-5 {
+  background: url("./../images/defaults/about-us/gallary_6-1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.wraper-about-us .section-5 .sub-title h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .wraper-partner .slider {
   background: url("./../images/defaults/partner/slider-bg.jpg") no-repeat;
   background-size: cover;

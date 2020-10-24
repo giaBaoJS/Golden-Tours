@@ -81,7 +81,7 @@ var mySwiper = new Swiper(".swiper-container", {
 });
 
 //Slider Tour Home
-var mySwiper = new Swiper(".swiper-container2", {
+var mySwiper2 = new Swiper(".swiper-container2", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 1,
@@ -107,12 +107,30 @@ var mySwiper = new Swiper(".swiper-container2", {
 });
 
 //Slider News Home
-var mySwiper = new Swiper(".swiper-container3", {
+var mySwiper3 = new Swiper(".swiper-container3", {
   direction: "horizontal",
   loop: false,
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination3",
     clickable: true,
+  },
+});
+
+//Slider About us
+var mySwiper3 = new Swiper(".swiper-container4", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 5,
+  pagination: {
+    el: ".swiper-pagination4",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.4,
+    },
   },
 });

@@ -1987,9 +1987,6 @@ footer .copyright p {
   }
 }
 
-.wraper-about-us {
-  @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
-}
 .wraper-about-us .border-bottom-title {
   border-bottom: 1px solid #eaeef3;
   margin-bottom: 50px;
@@ -2029,19 +2026,22 @@ footer .copyright p {
   line-height: 24px;
   font-family: sans-serif;
 }
-.wraper-about-us body {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Josefin Sans", sans-serif;
+.wraper-about-us .section-2 {
+  padding-bottom: 2rem;
 }
-.wraper-about-us .tpk_card {
+.wraper-about-us .section-2 .tpk_card {
   top: 50%;
   height: 180px;
   transform-style: preserve-3d;
   perspective: 600px;
   transition: 0.5s;
 }
-.wraper-about-us .tpk_card .front {
+@media screen and (max-width: 768px) {
+  .wraper-about-us .section-2 .tpk_card {
+    margin-bottom: 30px;
+  }
+}
+.wraper-about-us .section-2 .tpk_card .front {
   position: absolute;
   top: 0;
   left: 0;
@@ -2052,20 +2052,23 @@ footer .copyright p {
   transform: rotateX(0deg);
   transition: 0.5s;
   border: 5px solid #5191fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wraper-about-us .tpk_card .front h1 {
+.wraper-about-us .section-2 .tpk_card .front h1 {
   text-align: center;
   font-size: 25px;
   font-family: sans-serif;
-  padding-top: 1.5rem;
 }
-.wraper-about-us .tpk_card .front h1 span {
+.wraper-about-us .section-2 .tpk_card .front h1 span {
+  display: block;
   font-size: 40px;
 }
-.wraper-about-us .tpk_card:hover .front {
+.wraper-about-us .section-2 .tpk_card:hover .front {
   transform: rotateX(-180deg);
 }
-.wraper-about-us .tpk_card .back {
+.wraper-about-us .section-2 .tpk_card .back {
   position: absolute;
   top: 0;
   left: 0;
@@ -2076,19 +2079,11 @@ footer .copyright p {
   transform: rotateX(180deg);
   transition: 0.5s;
 }
-.wraper-about-us .tpk_card .back:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.1);
-}
-.wraper-about-us .tpk_card:hover .back {
+.wraper-about-us .section-2 .tpk_card:hover .back {
   transform: rotateX(0deg);
 }
-.wraper-about-us .tpk_card .back .details {
+.wraper-about-us .section-2 .tpk_card .back .details {
+  color: #ffffff;
   position: absolute;
   top: 50%;
   left: 0;
@@ -2098,22 +2093,22 @@ footer .copyright p {
   padding: 20px;
   box-sizing: border-box;
 }
-.wraper-about-us .tpk_card .back .details h2 {
+.wraper-about-us .section-2 .tpk_card .back .details h2 {
   margin: 0px;
   padding: 0px;
   font-size: 24px;
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
 }
-.wraper-about-us .tpk_card .back .details h2 span {
+.wraper-about-us .section-2 .tpk_card .back .details h2 span {
   color: #a7a7a7;
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
 }
-.wraper-about-us .tpk_card .social-icons {
+.wraper-about-us .section-2 .tpk_card .social-icons {
   padding: 10px 0;
 }
-.wraper-about-us .tpk_card .social-icons a {
+.wraper-about-us .section-2 .tpk_card .social-icons a {
   display: inline-block;
   width: 36px;
   height: 36px;
@@ -2124,14 +2119,11 @@ footer .copyright p {
   border-radius: 50%;
   transition: 0.5s;
 }
-.wraper-about-us .tpk_card .social-icons a .fab {
+.wraper-about-us .section-2 .tpk_card .social-icons a .fab {
   line-height: 36px;
 }
-.wraper-about-us .tpk_card .social-icons a:hover {
+.wraper-about-us .section-2 .tpk_card .social-icons a:hover {
   background: #e91e63;
-}
-.wraper-about-us .section-2 {
-  padding-bottom: 2rem;
 }
 .wraper-about-us .section-3 {
   text-align: center;
@@ -2139,71 +2131,84 @@ footer .copyright p {
 }
 .wraper-about-us .section-3 h2 {
   margin: 0 auto;
+  line-height: 24px;
+  max-width: 700px;
 }
-.wraper-about-us .section-3 .sub-box img {
-  padding: 1rem 0rem;
-  width: 100px;
+.wraper-about-us .list-image {
+  padding: 30px 0;
 }
-.wraper-about-us .section-3 .sub-box h2 {
-  color: #768092;
-}
-.wraper-about-us .section-3 .sub-box h2 span {
-  color: #1a2b48;
-  font-weight: bold;
-}
-.wraper-about-us .section-4 {
-  padding-bottom: 3rem;
-}
-.wraper-about-us .section-4 .one-time-about .slick-list {
-  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.65)), color-stop(0.1, black), color-stop(0.9, black), to(rgba(0, 0, 0, 0.65)));
-}
-.wraper-about-us .section-4 .one-time-about .slick-dots {
-  bottom: 0px;
-}
-.wraper-about-us .section-4 .content {
-  width: 90%;
-  height: 400px;
+.wraper-about-us .list-image .swiper-container4 {
   overflow: hidden;
-  margin: 0 auto;
 }
-.wraper-about-us .section-4 .content .sub-box-img {
+.wraper-about-us .list-image .swiper-container4 .swiper-wrapper img {
   height: 500px;
-  padding: 0rem 0.3rem;
+  object-fit: cover;
 }
-.wraper-about-us .section-4 .content .sub-box-img .img-1 {
-  background: url("./../images/defaults/about-us/gallary_1.jpg") no-repeat;
-  background-size: cover;
-  height: 500px;
-  background-position: center;
+@media screen and (max-width: 768px) {
+  .wraper-about-us .list-image .swiper-container4 .swiper-wrapper img {
+    height: 300px;
+  }
 }
-.wraper-about-us .section-4 .content .sub-box-img .img-2 {
-  background: url("./../images/defaults/about-us/gallary_2.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-}
-.wraper-about-us .section-4 .content .sub-box-img .img-3 {
-  background: url("./../images/defaults/about-us/gallary_3.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-}
-.wraper-about-us .section-4 .content .sub-box-img .img-4 {
-  background: url("./../images/defaults/about-us/gallary_5-1.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-}
-.wraper-about-us .section-4 .content .sub-box-img .img-5 {
-  background: url("./../images/defaults/about-us/gallary_6-1.jpg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 500px;
-}
-.wraper-about-us .section-5 .sub-title h1 {
+.wraper-about-us .list-image .swiper-container4 .swiper-pagination4 {
   text-align: center;
+  margin-top: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .wraper-about-us .list-image .swiper-container4 .swiper-pagination4 {
+    display: block;
+  }
+}
+.wraper-about-us .list-image .swiper-container4 .swiper-pagination4 .swiper-pagination-bullet {
+  margin-right: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: #8c8c8c;
+}
+@media screen and (max-width: 540px) {
+  .wraper-about-us .list-image .swiper-container4 .swiper-pagination4 .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+  }
+}
+.wraper-about-us .list-image .swiper-container4 .swiper-pagination4 .swiper-pagination-bullet:focus {
+  outline: none;
+}
+.wraper-about-us .list-image .swiper-container4 .swiper-pagination4 .swiper-pagination-bullet-active {
+  border-color: #ffdd00;
+  background-color: #ffdd00;
+}
+.wraper-about-us .our-team {
+  text-align: center;
+  padding: 50px 0;
+}
+.wraper-about-us .our-team .title {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .wraper-about-us .our-team .describe {
+    margin-bottom: 20px;
+  }
+}
+.wraper-about-us .our-team .describe img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.wraper-about-us .our-team .describe .content {
+  margin-top: 20px;
+}
+.wraper-about-us .our-team .describe .content h3 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.wraper-about-us .our-team .describe .content p {
+  font-size: 14px;
+  color: #768092;
+  font-style: italic;
 }
 
 .wraper-partner .slider {

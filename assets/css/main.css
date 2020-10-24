@@ -1310,17 +1310,17 @@ footer .copyright p {
   margin-right: 5px;
   cursor: pointer;
 }
+.wrapper-tour .tours .filter-tour .sort .layout-item.active i {
+  color: #19a1e5;
+}
+.wrapper-tour .tours .filter-tour .sort .layout-item i {
+  color: #5e6d77;
+}
 .wrapper-tour .tours .filter-tour .sort .layout-item svg {
   height: 20px;
 }
-.wrapper-tour .tours .filter-tour .sort .layout-item .icon-active {
-  display: none;
-}
-.wrapper-tour .tours .filter-tour .sort .active .icon-active {
-  display: block;
-}
-.wrapper-tour .tours .filter-tour .sort .active .icon-normal {
-  display: none;
+.wrapper-tour .tours .sidebar i {
+  color: #c4c7ca;
 }
 .wrapper-tour .tours .sidebar .search-form {
   margin-bottom: 20px;

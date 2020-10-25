@@ -126,6 +126,55 @@
         left: 30px;
       }
     }
+    .search-form {
+      .wrap-form {
+        position: relative;
+        margin-top: -40px;
+        background-color: white;
+        z-index: 10;
+        box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.07);
+        @include media(768px) {
+          margin-top: -140px;
+        }
+        .line {
+          border-right: 1px solid #dfdfdf;
+          @include media(768px) {
+            border-bottom: 1px solid #dfdfdf;
+            border-right: none;
+          }
+        }
+        .wrapper-items-form {
+          i {
+            color: #848484;
+          }
+          .item {
+            border-bottom: none;
+            input {
+              display: block;
+            }
+            .arrow-date {
+              right: 20px;
+            }
+          }
+        }
+        button {
+          font-size: 16px;
+          cursor: pointer;
+          text-transform: uppercase;
+          color: #848484;
+          width: 100%;
+          padding: 15px 10px;
+          background-color: #ffdd00;
+          height: 100%;
+          border: none;
+          -webkit-appearance: none;
+          transition: 0.3s all;
+          &:hover {
+            background-color: #eacb00;
+          }
+        }
+      }
+    }
   }
   .regions {
     padding: 110px 0;

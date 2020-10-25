@@ -118,7 +118,7 @@ var mySwiper3 = new Swiper(".swiper-container3", {
 });
 
 //Slider About us
-var mySwiper3 = new Swiper(".swiper-container4", {
+var mySwiper4 = new Swiper(".swiper-container4", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
@@ -131,6 +131,25 @@ var mySwiper3 = new Swiper(".swiper-container4", {
   breakpoints: {
     768: {
       slidesPerView: 1.4,
+    },
+  },
+});
+
+//Slider Partner Page
+var mySwiper5 = new Swiper(".swiper-container5", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 2,
+  spaceBetween: 10,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      centeredSlides: true,
     },
   },
 });

@@ -14,18 +14,12 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./assets/libs/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/libs/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./assets/libs/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/libs/css/magnific.css" />
+    <link rel="stylesheet" href="./assets/libs/css/wow.css" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
   </head>
   <body>
     <header class="header">
@@ -61,7 +55,7 @@
               <div class="main-logo">
                 <a href="#"
                   ><img
-                    src="/assets/images/defaults/logofooter.png"
+                    src="./assets/images/defaults/logofooter.png"
                     width="150px"
                     alt="logo"
                 /></a>
@@ -88,17 +82,138 @@
       </div>
     </header>
     <div class="wrapper-home">
-      <section class="banner">
-        <img
-          class="img-fluid w-100"
-          src="./assets/images/defaults/banner-home.jpg"
-          alt="home"
-        />
+      <section class="banner-home">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="image">
+                  <img
+                    class="img-fluid w-100"
+                    src="./assets/images/defaults/banner-home.jpg"
+                    alt="home"
+                  />
+                </div>
+                <div class="describe">
+                  <h2 class="title">Đi thôi nào</h2>
+                  <h3 class="sub-title">Trải nghiệm hà nội</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione blanditiis quia impedit? Quae ipsa, facilis
+                    consequuntur quas minus molestias consectetur possimus,
+                    nesciunt adipisci cumque dolores. Corrupti nesciunt magni
+                    deserunt ab
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="content">
+                <div class="image">
+                  <img
+                    class="img-fluid w-100"
+                    src="./assets/images/defaults/banner-home2.jpg"
+                    alt="home"
+                  />
+                </div>
+                <div class="describe">
+                  <h2 class="title">Đi thôi nào 2</h2>
+                  <h3 class="sub-title">Trải nghiệm hà nội</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione blanditiis quia impedit? Quae ipsa, facilis
+                    consequuntur quas minus molestias consectetur possimus,
+                    nesciunt adipisci cumque dolores. Corrupti nesciunt magni
+                    deserunt ab
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide-button-prev">
+            <i class="fa fa-angle-left"></i>
+          </div>
+          <div class="slide-button-next">
+            <i class="fa fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="search-form">
+          <div class="container">
+            <form class="wrap-form" action="#">
+              <div class="row no-gutters">
+                <div class="col-lg-3 line">
+                  <div class="wrapper-items-form">
+                    <div class="item">
+                      <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                      <div class="content">
+                        <label for="diemden">Điểm đến</label>
+                        <input type="text" placeholder="Nơi mà bạn muốn đến?" />
+                      </div>
+                    </div>
+                    <ul class="dropdown-place d-none">
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hạ Long</span></li>
+                      <li><span>Hà Nội</span></li>
+                      <li><span>Hồ Chí Minh</span></li>
+                      <li><span>Thanh Hóa</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 line">
+                  <div class="wrapper-items-form">
+                    <div class="item">
+                      <i class="far fa-calendar"></i>
+                      <div class="content">
+                        <label for="checkin">Ngày đi - Ngày về</label>
+                        <div id="checkin">dd/mm/yyyy</div>
+                      </div>
+                      <div class="arrow-date">
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 line">
+                  <div class="wrapper-items-form">
+                    <div class="item">
+                      <i class="fas fa-user-friends"></i>
+                      <div class="content">
+                        <label for="checkin">Lượng người</label>
+                        <div id="checkin">2 người lớn</div>
+                      </div>
+                      <div class="arrow-date">
+                        <i class="fa fa-angle-down"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <button class="btn-submit" type="submit">Tìm</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </section>
       <section class="about-us">
         <div class="container">
           <div class="row">
-            <div class="col-md-5">
+            <div class="col-lg-5 col-md-12">
               <div class="content">
                 <img
                   class="img-fluid"
@@ -120,7 +235,11 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-7">
+            <div
+              class="col-lg-7 col-md-12 wow zoomIn"
+              data-wow-duration="1s"
+              data-wow-delay="1s"
+            >
               <img
                 class="img-fluid w-100"
                 src="./assets/images/defaults/vietnamoi.png"
@@ -136,7 +255,11 @@
             <p>xách ba lô lên và đi</p>
             <h2>3 miền <strong>Việt Nam</strong></h2>
           </div>
-          <div class="row">
+          <div
+            class="row wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.5s"
+          >
             <div class="col-md-4">
               <div class="wrapper-image">
                 <a href="#"
@@ -194,81 +317,539 @@
           </div>
         </div>
       </section>
-
       <section class="experience">
         <div class="container">
           <div class="row">
-            <div class="col-md-5">
-              <h2>NHỮNG <strong>CHUYẾN ĐI</strong> MỚI</h2>
-              <h3>TRẢI NGHIỆM</h3>
-              <p>
-                There are many variations of passages of. Lorem Ipsum available,
-                but the majority have suffered alteration in some form, by
-                injected humour, or randomised words which don't look.
-              </p>
-            </div>
-            <div class="col-md-7">
-              <div class="promote-videos">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://www.youtube.com/embed/ZnKd2j9hqC8"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen=""
-                ></iframe>
+            <div
+              class="col-md-12 wow fadeInUp"
+              data-wow-duration="1s"
+              data-wow-delay="0.5s"
+            >
+              <div class="content">
+                <h2>NHỮNG <strong>CHUYẾN ĐI</strong> MỚI</h2>
+                <h3>TRẢI NGHIỆM</h3>
+                <p>
+                  There are many variations of passages of. Lorem Ipsum
+                  available, but the majority have suffered alteration in some
+                  form, by injected humour, or randomised words which don't
+                  look.
+                </p>
+                <div class="img-video">
+                  <img
+                    class="img-fluid w-100"
+                    src="./assets/images/defaults/imgvideo.jpg"
+                    alt="img"
+                  />
+                  <a
+                    class="btn-video"
+                    href="https://www.youtube.com/watch?v=Ilui-mb3sT0"
+                    ><i class="fa fa-play"></i>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="tour-hot"></section>
+      <section class="tour-hot">
+        <div class="tour-hot__title">
+          <h2 class="title">Tour Hot</h2>
+          <h3 class="sub-title">Hãy Chọn Ngay</h3>
+        </div>
+        <div class="swiper-container2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="wrapper-tour">
+                <div class="feature-image">
+                  <a href="#">
+                    <img
+                      class="w-100 img-fluid"
+                      src="./assets/images/defaults/background/bg-duoicung.jpg"
+                      alt=""
+                  /></a>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="feature-tour">Đặt nhiều</div>
+                  <div class="sale">- 20%</div>
+                </div>
+                <div class="content">
+                  <div class="content-top">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Miền bắc</h3>
+                  </div>
+                  <a href="#">Hạ Long - Sapa</a>
+                  <div class="content-mid">
+                    <ul class="d-flex list-star">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>7 nhận xét</span>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-clock-o"></i>
+                      <span
+                        style="
+                          color: #6f6f6f;
+                          font-size: 14px;
+                          margin-left: 5px;
+                        "
+                        >3 Ngày 2 Đêm</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <i class="fas fa-bolt"></i>
+                      <p>1.000.000đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper-tour">
+                <div class="feature-image">
+                  <a href="#">
+                    <img
+                      class="w-100 img-fluid"
+                      src="./assets/images/defaults/background/bg-duoicung.jpg"
+                      alt=""
+                  /></a>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="feature-tour">Đặt nhiều</div>
+                  <div class="sale">- 20%</div>
+                </div>
+                <div class="content">
+                  <div class="content-top">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Miền bắc</h3>
+                  </div>
+                  <a href="#">Hạ Long - Sapa</a>
+                  <div class="content-mid">
+                    <ul class="d-flex list-star">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>7 nhận xét</span>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-clock-o"></i>
+                      <span
+                        style="
+                          color: #6f6f6f;
+                          font-size: 14px;
+                          margin-left: 5px;
+                        "
+                        >3 Ngày 2 Đêm</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <i class="fas fa-bolt"></i>
+                      <p>1.000.000đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper-tour">
+                <div class="feature-image">
+                  <a href="#">
+                    <img
+                      class="w-100 img-fluid"
+                      src="./assets/images/defaults/background/bg-duoicung.jpg"
+                      alt=""
+                  /></a>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="feature-tour">Đặt nhiều</div>
+                  <div class="sale">- 20%</div>
+                </div>
+                <div class="content">
+                  <div class="content-top">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Miền bắc</h3>
+                  </div>
+                  <a href="#">Hạ Long - Sapa</a>
+                  <div class="content-mid">
+                    <ul class="d-flex list-star">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>7 nhận xét</span>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-clock-o"></i>
+                      <span
+                        style="
+                          color: #6f6f6f;
+                          font-size: 14px;
+                          margin-left: 5px;
+                        "
+                        >3 Ngày 2 Đêm</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <i class="fas fa-bolt"></i>
+                      <p>1.000.000đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper-tour">
+                <div class="feature-image">
+                  <a href="#">
+                    <img
+                      class="w-100 img-fluid"
+                      src="./assets/images/defaults/background/bg-duoicung.jpg"
+                      alt=""
+                  /></a>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="feature-tour">Đặt nhiều</div>
+                  <div class="sale">- 20%</div>
+                </div>
+                <div class="content">
+                  <div class="content-top">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Miền bắc</h3>
+                  </div>
+                  <a href="#">Hạ Long - Sapa</a>
+                  <div class="content-mid">
+                    <ul class="d-flex list-star">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>7 nhận xét</span>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-clock-o"></i>
+                      <span
+                        style="
+                          color: #6f6f6f;
+                          font-size: 14px;
+                          margin-left: 5px;
+                        "
+                        >3 Ngày 2 Đêm</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <i class="fas fa-bolt"></i>
+                      <p>1.000.000đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper-tour">
+                <div class="feature-image">
+                  <a href="#">
+                    <img
+                      class="w-100 img-fluid"
+                      src="./assets/images/defaults/background/bg-duoicung.jpg"
+                      alt=""
+                  /></a>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="feature-tour">Đặt nhiều</div>
+                  <div class="sale">- 20%</div>
+                </div>
+                <div class="content">
+                  <div class="content-top">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Miền bắc</h3>
+                  </div>
+                  <a href="#">Hạ Long - Sapa</a>
+                  <div class="content-mid">
+                    <ul class="d-flex list-star">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>7 nhận xét</span>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-clock-o"></i>
+                      <span
+                        style="
+                          color: #6f6f6f;
+                          font-size: 14px;
+                          margin-left: 5px;
+                        "
+                        >3 Ngày 2 Đêm</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <i class="fas fa-bolt"></i>
+                      <p>1.000.000đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper-tour">
+                <div class="feature-image">
+                  <a href="#">
+                    <img
+                      class="w-100 img-fluid"
+                      src="./assets/images/defaults/background/bg-duoicung.jpg"
+                      alt=""
+                  /></a>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="feature-tour">Đặt nhiều</div>
+                  <div class="sale">- 20%</div>
+                </div>
+                <div class="content">
+                  <div class="content-top">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Miền bắc</h3>
+                  </div>
+                  <a href="#">Hạ Long - Sapa</a>
+                  <div class="content-mid">
+                    <ul class="d-flex list-star">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>7 nhận xét</span>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-clock-o"></i>
+                      <span
+                        style="
+                          color: #6f6f6f;
+                          font-size: 14px;
+                          margin-left: 5px;
+                        "
+                        >3 Ngày 2 Đêm</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <i class="fas fa-bolt"></i>
+                      <p>1.000.000đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper-tour">
+                <div class="feature-image">
+                  <a href="#">
+                    <img
+                      class="w-100 img-fluid"
+                      src="./assets/images/defaults/background/bg-duoicung.jpg"
+                      alt=""
+                  /></a>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="feature-tour">Đặt nhiều</div>
+                  <div class="sale">- 20%</div>
+                </div>
+                <div class="content">
+                  <div class="content-top">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Miền bắc</h3>
+                  </div>
+                  <a href="#">Hạ Long - Sapa</a>
+                  <div class="content-mid">
+                    <ul class="d-flex list-star">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>7 nhận xét</span>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-clock-o"></i>
+                      <span
+                        style="
+                          color: #6f6f6f;
+                          font-size: 14px;
+                          margin-left: 5px;
+                        "
+                        >3 Ngày 2 Đêm</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <i class="fas fa-bolt"></i>
+                      <p>1.000.000đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="wrapper-tour">
+                <div class="feature-image">
+                  <a href="#">
+                    <img
+                      class="w-100 img-fluid"
+                      src="./assets/images/defaults/background/bg-duoicung.jpg"
+                      alt=""
+                  /></a>
+                  <div class="icons">
+                    <a href="#"><i class="fa fa-heart"></i></a>
+                  </div>
+                  <div class="feature-tour">Đặt nhiều</div>
+                  <div class="sale">- 20%</div>
+                </div>
+                <div class="content">
+                  <div class="content-top">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Miền bắc</h3>
+                  </div>
+                  <a href="#">Hạ Long - Sapa</a>
+                  <div class="content-mid">
+                    <ul class="d-flex list-star">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>7 nhận xét</span>
+                  </div>
+                  <div class="content-bottom">
+                    <div class="d-flex align-items-center">
+                      <i class="fa fa-clock-o"></i>
+                      <span
+                        style="
+                          color: #6f6f6f;
+                          font-size: 14px;
+                          margin-left: 5px;
+                        "
+                        >3 Ngày 2 Đêm</span
+                      >
+                    </div>
+                    <div class="d-flex">
+                      <i class="fas fa-bolt"></i>
+                      <p>1.000.000đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
       <section class="news">
         <div class="container">
           <h2>Tin tức mới nhất</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <img
-                src="./assets/images/defaults/news/mang-den_1.jpg"
-                class="w-100 img-fluid"
-                alt="images"
-              />
-            </div>
-            <div class="col-md-6">
-              <div class="content">
-                <h3>Khám phá Măng Đen - 'Đà Lạt thứ 2' ở Tây Nguyên</h3>
-                <ul>
-                  <li><a href="#">Jul 24, 2020</a></li>
-                  <li><a href="#">Bao Dep Trai</a></li>
-                </ul>
-                <p>
-                  Tây Nguyên - vùng đất đầy nắng và gió với thảo nguyên bạt
-                  ngàn, dãy đồi trập trùng vô tận, vườn trà, cà phê… kéo dài hun
-                  hút tầm mắt. Sự bao la bát ngát của nơi này chắc chắn sẽ làm
-                  say lòng biết bao lữ khách. Có rất nhiều điểm dừng chân để bạn
-                  lựa chọn khi đến với vùng đất này, Măng Đen là một trong số
-                  đó.
-                </p>
+          <div
+            class="swiper-container3 wow fadeInUp"
+            data-wow-delay="0.5s"
+            data-wow-duration="1s"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="./assets/images/defaults/news/mang-den_1.jpg"
+                      class="w-100 img-fluid"
+                      alt="images"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="content">
+                      <a class="title" href="#"
+                        >Khám phá Măng Đen - 'Đà Lạt thứ 2' ở Tây Nguyên</a
+                      >
+                      <ul>
+                        <li><a href="#">Jul 24, 2020</a></li>
+                        <li><a href="#">Bao Dep Trai</a></li>
+                      </ul>
+                      <p>
+                        Tây Nguyên - vùng đất đầy nắng và gió với thảo nguyên
+                        bạt ngàn, dãy đồi trập trùng vô tận, vườn trà, cà phê…
+                        kéo dài hun hút tầm mắt. Sự bao la bát ngát của nơi này
+                        chắc chắn sẽ làm say lòng biết bao lữ khách. Có rất
+                        nhiều điểm dừng chân để bạn lựa chọn khi đến với vùng
+                        đất này, Măng Đen là một trong số đó.
+                      </p>
+                    </div>
+                    <a class="btn btn-main" href="#">Xem Thêm</a>
+                  </div>
+                </div>
               </div>
-              <a class="btn btn-main" href="#">Xem Thêm</a>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="./assets/images/defaults/news/3-mat-than.jpg"
+                      class="w-100 img-fluid"
+                      alt="images"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <div class="content">
+                      <a class="title" href="#"
+                        >Khám phá Tam Giác Quỷ Gia Bảo</a
+                      >
+                      <ul>
+                        <li><a href="#">Jul 24, 2020</a></li>
+                        <li><a href="#">Bao Dep Trai</a></li>
+                      </ul>
+                      <p>
+                        Tây Nguyên - vùng đất đầy nắng và gió với thảo nguyên
+                        bạt ngàn, dãy đồi trập trùng vô tận, vườn trà, cà phê…
+                        kéo dài hun hút tầm mắt. Sự bao la bát ngát của nơi này
+                        chắc chắn sẽ làm say lòng biết bao lữ khách. Có rất
+                        nhiều điểm dừng chân để bạn lựa chọn khi đến với vùng
+                        đất này, Măng Đen là một trong số đó.
+                      </p>
+                    </div>
+                    <a class="btn btn-main" href="#">Xem Thêm</a>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="swiper-pagination3"></div>
           </div>
         </div>
       </section>
       <section class="tours-sale">
         <div class="row no-gutters align-items-center">
-          <div class="col-md-5">
-            <div class="left-content">
-              <div class="very-detail">
-                <div class="content">
-                  <h3>KHUYẾN MÃI</h3>
-                  <h4>MÙA HÈ</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <div class="right-content">
+          <div class="col-md-12">
+            <div class="content">
               <div class="detail">
                 <div class="detail-left">
                   <div class="sale-box">
@@ -383,22 +964,22 @@
               <ul class="list-icon-social">
                 <li>
                   <a href="#" class="link facebook">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" class="link twitter">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fab fa-twitter"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" class="link pinterest">
-                    <i class="fa fa-pinterest-p"></i>
+                    <i class="fab fa-pinterest-p"></i>
                   </a>
                 </li>
                 <li>
                   <a href="#" class="link google">
-                    <i class="fa fa-google"></i>
+                    <i class="fab fa-google"></i>
                   </a>
                 </li>
               </ul>
@@ -415,7 +996,19 @@
     ></a>
     <script src="./assets/libs/js/jquery-3.5.1.min.js"></script>
     <script src="./assets/libs/js/bootstrap.min.js"></script>
-    <script src="./assets/libs/js/jquery.mousewheel.min.js"></script>
+    <script src="./assets/libs/js/swiper-bundle.js"></script>
+    <script src="./assets/libs/js/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./assets/libs/js/magnific.js"></script>
+    <script src="./assets/libs/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script>
+      $(".btn-video").magnificPopup({
+        type: "iframe",
+      });
+    </script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

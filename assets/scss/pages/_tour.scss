@@ -32,26 +32,26 @@
           display: flex;
           &-item {
             margin-right: 5px;
+            &.active {
+              i {
+                color: #19a1e5;
+              }
+            }
+            i {
+              color: #5e6d77;
+            }
             cursor: pointer;
             svg {
               height: 20px;
             }
-            .icon-active {
-              display: none;
-            }
-          }
-        }
-        .active {
-          .icon-active {
-            display: block;
-          }
-          .icon-normal {
-            display: none;
           }
         }
       }
     }
     .sidebar {
+      i {
+        color: #c4c7ca;
+      }
       .search-form {
         margin-bottom: 20px;
         border: 1px solid #d7dce3;
@@ -77,7 +77,7 @@
           }
         }
         .form {
-          .wrapper-items {
+          .wrapper-items-form {
             .item {
               padding: 20px 15px;
               display: flex;

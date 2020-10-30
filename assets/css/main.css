@@ -1639,17 +1639,15 @@ footer .copyright p {
   display: flex;
 }
 .wrapper-tour .tours .filter-tour .sort .layout-item {
-  margin-right: 5px;
+  margin-right: 10px;
   cursor: pointer;
 }
 .wrapper-tour .tours .filter-tour .sort .layout-item.active i {
   color: #19a1e5;
 }
 .wrapper-tour .tours .filter-tour .sort .layout-item i {
+  font-size: 20px;
   color: #5e6d77;
-}
-.wrapper-tour .tours .filter-tour .sort .layout-item svg {
-  height: 20px;
 }
 .wrapper-tour .tours .sidebar i {
   color: #c4c7ca;
@@ -1819,6 +1817,21 @@ footer .copyright p {
   position: absolute;
   opacity: 0;
   cursor: pointer;
+}
+.wrapper-tour .tours .tabs {
+  display: none;
+  animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.wrapper-tour .tours .tabs.active {
+  display: block;
 }
 .wrapper-tour .tours .tours-cover .item-service {
   border: 1px solid #d7dce3;

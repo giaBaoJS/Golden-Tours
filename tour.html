@@ -324,13 +324,13 @@
                 </div>
                 <div class="sort">
                   <a href="#">Sắp xếp <i class="fa fa-angle-down arrow"></i></a>
-                  <div class="layout">
-                    <span class="layout-item active">
+                  <div class="layout tablist">
+                    <span class="layout-item active" data-tab="tab1">
                       <span class="icon-normal">
                         <i class="fas fa-list"></i>
                       </span>
                     </span>
-                    <span class="layout-item" data-value="grid">
+                    <span class="layout-item" data-tab="tab2">
                       <span class="icon-normal">
                         <i class="fas fa-th" aria-hidden="true"></i>
                       </span>
@@ -340,7 +340,7 @@
               </div>
 
               <!-- Tour dạng list  -->
-              <div class="list-tours">
+              <div class="list-tours tabs tab1 active">
                 <div class="row">
                   <div class="col-lg-4 col-md-6">
                     <div class="wrapper-tour">
@@ -790,8 +790,138 @@
               </div>
 
               <!-- Tour dạng chi tiết -->
-              <div class="tours-cover">
+              <div class="tours-cover tabs tab2">
                 <div class="row">
+                  <div class="item-service">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="thumb">
+                          <div class="icons">
+                            <a href="#"><i class="fa fa-heart"></i></a>
+                            <div class="feature-tour">Đặt nhiều</div>
+                            <a href="#">
+                              <img
+                                class="w-100 img-fluid"
+                                src="./assets/images/defaults/background/bg-duoicung.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="content">
+                          <div class="content-top">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Miền bắc</h3>
+                          </div>
+                          <a href="#">Hạ Long - Sapa</a>
+                          <div class="content-mid">
+                            <ul class="d-flex list-star">
+                              <li><i class="fa fa-star"></i></li>
+                              <li><i class="fa fa-star"></i></li>
+                              <li><i class="fa fa-star"></i></li>
+                              <li><i class="fa fa-star"></i></li>
+                              <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span>7 nhận xét</span>
+                          </div>
+                          <p>
+                            Varius massa maecenas et id dictumst mattis. Donec
+                            fringilla ac parturient posuere ...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="services">
+                          <div class="d-flex align-items-center services-price">
+                            <span>Giá từ</span>
+                            <p>1.000.000đ</p>
+                          </div>
+                          <div class="d-flex align-items-center services-list">
+                            <i class="fa fa-clock-o"></i>
+                            <span>3 Ngày 2 Đêm</span>
+                          </div>
+                          <div class="d-flex align-items-center services-list">
+                            <i class="fas fa-hotel"></i>
+                            <span>Khách sạn cao cấp</span>
+                          </div>
+                          <div class="d-flex align-items-center services-list">
+                            <i class="fas fa-plane"></i>
+                            <span>Vé máy bay khứ hồi</span>
+                          </div>
+                          <div class="sale">- 20%</div>
+                          <div class="text-center">
+                            <a href="#" class="btn-tours">Chi tiết</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item-service">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="thumb">
+                          <div class="icons">
+                            <a href="#"><i class="fa fa-heart"></i></a>
+                            <div class="feature-tour">Đặt nhiều</div>
+                            <a href="#">
+                              <img
+                                class="w-100 img-fluid"
+                                src="./assets/images/defaults/background/bg-duoicung.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="content">
+                          <div class="content-top">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Miền bắc</h3>
+                          </div>
+                          <a href="#">Hạ Long - Sapa</a>
+                          <div class="content-mid">
+                            <ul class="d-flex list-star">
+                              <li><i class="fa fa-star"></i></li>
+                              <li><i class="fa fa-star"></i></li>
+                              <li><i class="fa fa-star"></i></li>
+                              <li><i class="fa fa-star"></i></li>
+                              <li><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span>7 nhận xét</span>
+                          </div>
+                          <p>
+                            Varius massa maecenas et id dictumst mattis. Donec
+                            fringilla ac parturient posuere ...
+                          </p>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="services">
+                          <div class="d-flex align-items-center services-price">
+                            <span>Giá từ</span>
+                            <p>1.000.000đ</p>
+                          </div>
+                          <div class="d-flex align-items-center services-list">
+                            <i class="fa fa-clock-o"></i>
+                            <span>3 Ngày 2 Đêm</span>
+                          </div>
+                          <div class="d-flex align-items-center services-list">
+                            <i class="fas fa-hotel"></i>
+                            <span>Khách sạn cao cấp</span>
+                          </div>
+                          <div class="d-flex align-items-center services-list">
+                            <i class="fas fa-plane"></i>
+                            <span>Vé máy bay khứ hồi</span>
+                          </div>
+                          <div class="sale">- 20%</div>
+                          <div class="text-center">
+                            <a href="#" class="btn-tours">Chi tiết</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div class="item-service">
                     <div class="row">
                       <div class="col-md-4">

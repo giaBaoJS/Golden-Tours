@@ -137,3 +137,12 @@ $(document).on("click", function(e) {
     $(".dropdown-place").removeClass("active");
   }
 });
+
+//Change Layout Tab in Page Tour
+$('.tablist .layout-item').click(function (e) {
+  $('.tablist .layout-item').removeClass('active');
+  $(this).addClass('active');
+  let id = $(this).attr('data-tab');
+  $('.tabs').removeClass('active');
+  $('.' + id).addClass('active');
+});

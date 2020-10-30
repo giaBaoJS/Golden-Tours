@@ -118,3 +118,22 @@ var mySwiper5 = new Swiper(".swiper-container5", {
     },
   },
 });
+
+//Checkbox click
+$('.two-ele .fcheckbox').click(function(){
+  $(this).toggleClass('checkmark');
+})
+$('#diemden').focus(function(){
+  $('.dropdown-place').addClass('active');
+})
+
+$('.dropdown-place li').click(function(){
+var data = $(this).attr('data-value');
+var texts = $(this).text();
+  $('#diemden').attr("placeholder",texts);
+})
+$(document).on("click", function(e) {
+  if ($(e.target).is("#diemden") === false) {
+    $(".dropdown-place").removeClass("active");
+  }
+});

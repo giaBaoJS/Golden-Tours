@@ -59,7 +59,7 @@
             padding: 20px 0;
             border-bottom: 1px solid #dfdfdf;
             font-size: 15px;
-            font-weight: 200;
+            font-weight: 600;
             text-transform: uppercase;
             &::before {
               content: "";
@@ -132,8 +132,8 @@
               }
             }
             .dropdown-place {
-              display:  none;
-              &.active{
+              display: none;
+              &.active {
                 display: block;
               }
               overflow: hidden scroll;
@@ -202,7 +202,7 @@
                     top: 2px;
                     width: 5px;
                     height: 8px;
-                    border: solid  #5191fa;
+                    border: solid #5191fa;
                     border-width: 0 2px 2px 0;
                     transform: rotate(45deg);
                   }
@@ -231,7 +231,7 @@
         }
       }
     }
-    .tabs{
+    .tabs {
       display: none;
       animation: fadeEffect 1s;
       @keyframes fadeEffect {
@@ -242,7 +242,7 @@
           opacity: 1;
         }
       }
-      &.active{
+      &.active {
         display: block;
       }
     }
@@ -307,7 +307,7 @@
             display: inline-block;
             color: #000000;
             font-size: 20px;
-            font-weight: 200;
+            font-weight: 600;
             margin-bottom: 20px;
             &:hover {
               text-decoration: underline;
@@ -350,6 +350,7 @@
           }
         }
         .services {
+          overflow: hidden;
           padding-top: 35px;
           position: relative;
           i {
@@ -373,7 +374,7 @@
               font-size: 13px;
             }
             p {
-              font-weight: 200;
+              font-weight: 600;
               font-size: 20px;
             }
           }

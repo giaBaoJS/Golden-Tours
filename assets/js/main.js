@@ -131,6 +131,32 @@ jQuery(document).ready(function ($) {
 	}
 	/** QTT PICKER - END*/
 
+	/** FLATPICKER */
+	if ($('.flatpickr-input').length) {
+		const toDate = flatpickr('#to-date', {
+			disableMobile: 'true',
+			dateFormat: 'd/m/Y H:i',
+			enableTime: true,
+			time_24hr: true,
+			locale: 'vn',
+		});
+		const fromDate = flatpickr('#from-date', {
+			disableMobile: 'true',
+			dateFormat: 'd/m/Y H:i',
+			enableTime: true,
+			time_24hr: true,
+			locale: 'vn',
+			onReady: function () {
+				this.set('minDate', new Date());
+			},
+			onChange: function (selectedDates, dateStr, instance) {
+				toDate.set('minDate', dateStr);
+				console.log(selectedDates);
+			},
+		});
+	}
+	/** FLATPICKER - END */
+
 	$(window).scroll(function () {
 		if ($(this).scrollTop() >= 500) {
 			$('#return-to-top').fadeIn(300);
@@ -254,29 +280,29 @@ jQuery(document).ready(function ($) {
 });
 
 //Checkbox click
-$('.two-ele .fcheckbox').click(function(){
-  $(this).toggleClass('checkmark');
-})
-$('#diemden').focus(function(){
-  $('.dropdown-place').addClass('active');
-})
+$('.two-ele .fcheckbox').click(function () {
+	$(this).toggleClass('checkmark');
+});
+$('#diemden').focus(function () {
+	$('.dropdown-place').addClass('active');
+});
 
-$('.dropdown-place li').click(function(){
-var data = $(this).attr('data-value');
-var texts = $(this).text();
-  $('#diemden').attr("placeholder",texts);
-})
-$(document).on("click", function(e) {
-  if ($(e.target).is("#diemden") === false) {
-    $(".dropdown-place").removeClass("active");
-  }
+$('.dropdown-place li').click(function () {
+	var data = $(this).attr('data-value');
+	var texts = $(this).text();
+	$('#diemden').attr('placeholder', texts);
+});
+$(document).on('click', function (e) {
+	if ($(e.target).is('#diemden') === false) {
+		$('.dropdown-place').removeClass('active');
+	}
 });
 
 //Change Layout Tab in Page Tour
 $('.tablist .layout-item').click(function (e) {
-  $('.tablist .layout-item').removeClass('active');
-  $(this).addClass('active');
-  let id = $(this).attr('data-tab');
-  $('.tabs').removeClass('active');
-  $('.' + id).addClass('active');
+	$('.tablist .layout-item').removeClass('active');
+	$(this).addClass('active');
+	let id = $(this).attr('data-tab');
+	$('.tabs').removeClass('active');
+	$('.' + id).addClass('active');
 });

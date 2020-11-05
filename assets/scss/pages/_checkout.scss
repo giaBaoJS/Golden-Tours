@@ -1,0 +1,115 @@
+.wrapper-checkout {
+  .checkout__detail {
+    padding: 40px 0;
+    background-color: #f8f8f8;
+    .step-check {
+      margin-bottom: 50px;
+      ul {
+        display: flex;
+        justify-content: center;
+        li {
+          width: calc(100% / 12 * 4);
+          text-align: center;
+          position: relative;
+          margin-right: 50px;
+          background-color: $primary2;
+          height: 60px;
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -30px;
+            z-index: 1;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 30px 0 30px 30px;
+            border-color: transparent transparent transparent $primary2;
+          }
+          &.active {
+            background-color: $primary;
+            &::after {
+              border-color: transparent transparent transparent $primary;
+            }
+            h2 {
+              color: $white;
+              i {
+              }
+            }
+          }
+
+          &:last-child {
+            &::after {
+              content: none;
+            }
+          }
+          h2 {
+            padding: 20px 35px;
+            margin-bottom: 0;
+            height: 100%;
+            color: $white;
+            font-size: 20px;
+            i {
+              margin-left: 10px;
+            }
+          }
+        }
+        @include media(768px) {
+          flex-wrap: wrap;
+          flex-direction: column;
+          li {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            &::after {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .form__client {
+    h3 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+      .form__items {
+        margin-bottom: 20px;
+        padding: 0 10px;
+        width: 50%;
+        &-full {
+          width: 100%;
+        }
+        label {
+          margin-bottom: 10px;
+        }
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px 15px;
+          border-radius: 5px;
+          border: 1px solid #cccccc;
+          transition: 0.3s all;
+          &:focus {
+            border-color: $primary;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+  .support-kh{
+      width: 100%;
+      background-color: $primary2;
+      
+  }
+}

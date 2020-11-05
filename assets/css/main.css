@@ -278,6 +278,12 @@ table {
   border-radius: 10px;
 }
 
+.reset-apperance {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
 .header {
   width: 100%;
   top: 0;
@@ -3623,4 +3629,113 @@ html .mfp-wrap {
 }
 .flatpickr-input {
   color: #5191fa;
+}
+
+.wrapper-checkout .checkout__detail {
+  padding: 40px 0;
+  background-color: #f8f8f8;
+}
+.wrapper-checkout .checkout__detail .step-check {
+  margin-bottom: 50px;
+}
+.wrapper-checkout .checkout__detail .step-check ul {
+  display: flex;
+  justify-content: center;
+}
+.wrapper-checkout .checkout__detail .step-check ul li {
+  width: calc(100% / 12 * 4);
+  text-align: center;
+  position: relative;
+  margin-right: 50px;
+  background-color: #0ac9db;
+  height: 60px;
+}
+.wrapper-checkout .checkout__detail .step-check ul li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -30px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 30px 30px;
+  border-color: transparent transparent transparent #0ac9db;
+}
+.wrapper-checkout .checkout__detail .step-check ul li.active {
+  background-color: #f1d354;
+}
+.wrapper-checkout .checkout__detail .step-check ul li.active::after {
+  border-color: transparent transparent transparent #f1d354;
+}
+.wrapper-checkout .checkout__detail .step-check ul li.active h2 {
+  color: #ffffff;
+}
+.wrapper-checkout .checkout__detail .step-check ul li:last-child::after {
+  content: none;
+}
+.wrapper-checkout .checkout__detail .step-check ul li h2 {
+  padding: 20px 35px;
+  margin-bottom: 0;
+  height: 100%;
+  color: #ffffff;
+  font-size: 20px;
+}
+.wrapper-checkout .checkout__detail .step-check ul li h2 i {
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .wrapper-checkout .checkout__detail .step-check ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .wrapper-checkout .checkout__detail .step-check ul li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .wrapper-checkout .checkout__detail .step-check ul li:last-child {
+    margin-bottom: 0;
+  }
+  .wrapper-checkout .checkout__detail .step-check ul li::after {
+    content: none;
+  }
+}
+.wrapper-checkout .form__client h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.wrapper-checkout .form__client form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.wrapper-checkout .form__client form .form__items {
+  margin-bottom: 20px;
+  padding: 0 10px;
+  width: 50%;
+}
+.wrapper-checkout .form__client form .form__items-full {
+  width: 100%;
+}
+.wrapper-checkout .form__client form .form__items label {
+  margin-bottom: 10px;
+}
+.wrapper-checkout .form__client form .form__items input,
+.wrapper-checkout .form__client form .form__items textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  transition: 0.3s all;
+}
+.wrapper-checkout .form__client form .form__items input:focus,
+.wrapper-checkout .form__client form .form__items textarea:focus {
+  border-color: #f1d354;
+  outline: none;
+}
+.wrapper-checkout .support-kh {
+  width: 100%;
+  background-color: #0ac9db;
 }

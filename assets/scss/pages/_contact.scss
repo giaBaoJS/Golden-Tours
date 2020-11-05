@@ -46,9 +46,10 @@
       }
       h1 {
         font-size: 24px;
-        font-weight: 200;
+        font-weight: 600;
         margin: 0px;
         padding-bottom: 20px;
+        color: $primary2;
       }
       p {
         font-size: 18px;
@@ -66,9 +67,8 @@
       }
     }
     .title-contact-right {
-      font-family: "Poppins", sans-serif !important;
       position: absolute;
-      background: #fa5636;
+      background: #0ac9db;
       width: 385px;
       height: 375px;
       color: #ffff;

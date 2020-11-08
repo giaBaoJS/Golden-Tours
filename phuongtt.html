@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang chủ</title>
+    <title>Phương thức thanh toán</title>
     <link
       rel="icon"
       type="image/png"
@@ -90,7 +90,7 @@
               <li class="active">
                 <h2>Điền thông tin <i class="fas fa-info-circle"></i></h2>
               </li>
-              <li>
+              <li class="active">
                 <h2>Thanh toán <i class="fab fa-amazon-pay"></i></h2>
               </li>
               <li>
@@ -101,64 +101,71 @@
           <div class="form__client">
             <div class="row">
               <div class="col-lg-8">
-                <h3>Thông tin liên hệ</h3>
-                <form action="#">
-                  <div class="form__items">
-                    <label for="name">Họ và tên</label>
-                    <input
-                      class="reset-apperance"
-                      placeholder="Nhập họ và tên"
-                      type="text"
-                    />
+                <h3>Chọn phương thức thanh toán</h3>
+                <div class="phuongthuctt">
+                  <div class="phuongthuctt__items">
+                    <div class="wrap__info active">
+                      <img src="./assets/images/defaults/master-card.png" alt="img">
+                      <p>Thẻ thanh toán Quốc tế</p>
+                    </div>
                   </div>
-                  <div class="form__items">
-                    <label for="name">Email</label>
-                    <input
-                      class="reset-apperance"
-                      placeholder="Nhập email"
-                      type="email"
-                    />
+                  <div class="phuongthuctt__items">
+                    <div class="wrap__info">
+                      <img src="./assets/images/defaults/zalopay.png" alt="img">
+                      <p>Zalo Pay</p>
+                    </div>
                   </div>
-                  <div class="form__items">
-                    <label for="name">Số điện thoại</label>
-                    <input
-                      class="reset-apperance"
-                      placeholder="Nhập số điện thoại"
-                      type="email"
-                    />
+                  <div class="phuongthuctt__items">
+                    <div class="wrap__info">
+                      <img src="./assets/images/defaults/momo.png" alt="img">
+                      <p>Ví điện tử Momo</p>
+                    </div>
                   </div>
-                  <div class="form__items">
-                    <label for="name">Thành phố</label>
-                    <input class="reset-apperance" type="text" />
+                  <div class="phuongthuctt__items">
+                    <div class="wrap__info">
+                      <img src="./assets/images/defaults/thanhtoantructiep.png" alt="img">
+                      <p>Thanh toán trực tiếp</p>
+                    </div>
                   </div>
-                  <div class="form__items form__items-full">
-                    <label for="name">Ghi chú</label>
-                    <textarea
-                      class="reset-apperance"
-                      name="ghichu"
-                      id="ghichu"
-                      cols="30"
-                      rows="10"
-                    ></textarea>
-                  </div>
-                  <div class="form__items form__items-full add-coupon">
-                    <h3 class="magiamgia">
-                      Mã Giảm giá <small>(nếu có)</small>
-                    </h3>
-                  </div>
-                  <div class="form__items">
-                    <input type="text " />
-                  </div>
-                  <div class="form__items">
-                    <a class="check-cp" href="#">Áp dụng</a>
-                  </div>
-                  <div class="form__items">
-                  <a class="goback" href="#">Trở về</a>
-                  </div>
-                  <div class="form__items">
-                   <button class="reset-apperance" type="submit">Tiếp tục</button>
-                  </div>
-                </form>
+                </div>
+                <div class="form_nhap_the">
+                  <form action="#">
+                    <div class="form__items">
+                      <label for="name">Số thẻ</label>
+                      <input
+                        class="reset-apperance"
+                        placeholder="Nhập số thẻ"
+                        type="text"
+                      />
+                    </div>
+                    <div class="form__items">
+                      <label for="name">Tên chủ thẻ</label>
+                      <input
+                        class="reset-apperance"
+                        placeholder="Nhập họ và tên"
+                        type="text"
+                      />
+                    </div>
+                    <div class="form__items">
+                      <label for="name">Ngày hết hạn</label>
+                      <input
+                        class="reset-apperance"
+                        placeholder="MM/YY"
+                        type="text"
+                      />
+                    </div>
+                    <div class="form__items">
+                      <label for="name">CVV/CVC</label>
+                      <input
+                        class="reset-apperance"
+                        placeholder="CVV/CVC"
+                        type="text"
+                      />
+                    </div>
+                    <div class="form__items form__items-full">
+                     <img class="w-100" src="./assets/images/defaults/credit-card.png" alt="img">
+                    </div>
+                </div>
               </div>
               <div class="col-lg-4">
                 <div class="support-kh">Hotline - 1900 200 777</div>

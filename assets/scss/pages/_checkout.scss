@@ -73,6 +73,14 @@
     }
   }
   .form__client {
+    .row {
+      @include media(768px) {
+        flex-direction: column-reverse;
+        .col-lg-4 {
+          margin-bottom: 30px;
+        }
+      }
+    }
     h3 {
       font-size: 24px;
       font-weight: bold;
@@ -81,6 +89,7 @@
     form {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       margin: 0 -10px;
       .form__items {
         margin-bottom: 20px;
@@ -104,12 +113,111 @@
             outline: none;
           }
         }
+        .magiamgia {
+          margin-bottom: 0;
+        }
+        .check-cp {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: $primary2;
+          color: $white;
+        }
+        button,
+        .goback {
+          padding: 15px 30px;
+          background-color: $primary;
+          color: $white;
+          float: right;
+          outline: none;
+          cursor: pointer;
+          border: none;
+        }
+        .goback {
+          float: left;
+        }
       }
     }
+    .add-coupon {
+      small {
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+      }
+    }
+    .phuongthuctt {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -10px;
+      &__items {
+        padding: 0 10px;
+        width: calc(100% / 12 * 3);
+        @include media(540px){
+          width: calc(100%/12*6);
+          margin-bottom: 20px;
+        }
+        .wrap__info {
+          border: 2px solid #9b9b9b;
+          padding: 20px;
+          height: 100%;
+          transition: 0.3s all;
+          img {
+            width: 100%;
+            height: auto;
+          }
+          p{
+            margin-top: 10px;
+            font-size: 12px;
+            text-align: center;
+          }
+          &:hover{
+            border-color: $primary2;
+          }
+          &.active{
+            background-color: $primary2;
+            color: $white;
+            border-color: $primary2;
+          }
+        }
+      }
+    }
+    .form_nhap_the{
+      margin-top: 20px;
+      padding: 20px;
+      background-color: $white;
+      border-radius: 5px;
+    }
   }
-  .support-kh{
-      width: 100%;
-      background-color: $primary2;
-      
+  .support-kh {
+    width: 100%;
+    background-color: $primary2;
+    text-align: center;
+    color: $white;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .book-details {
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+    &__info {
+      h4 {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      padding: 20px;
+      background-color: $white;
+      border-radius: 0 0 4px 4px;
+      ul {
+        li {
+          padding: 10px 0;
+          span {
+            font-weight: bold;
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
 }

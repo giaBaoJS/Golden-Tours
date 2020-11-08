@@ -3701,6 +3701,14 @@ html .mfp-wrap {
     content: none;
   }
 }
+@media screen and (max-width: 768px) {
+  .wrapper-checkout .form__client .row {
+    flex-direction: column-reverse;
+  }
+  .wrapper-checkout .form__client .row .col-lg-4 {
+    margin-bottom: 30px;
+  }
+}
 .wrapper-checkout .form__client h3 {
   font-size: 24px;
   font-weight: bold;
@@ -3709,6 +3717,7 @@ html .mfp-wrap {
 .wrapper-checkout .form__client form {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   margin: 0 -10px;
 }
 .wrapper-checkout .form__client form .form__items {
@@ -3735,7 +3744,105 @@ html .mfp-wrap {
   border-color: #f1d354;
   outline: none;
 }
+.wrapper-checkout .form__client form .form__items .magiamgia {
+  margin-bottom: 0;
+}
+.wrapper-checkout .form__client form .form__items .check-cp {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0ac9db;
+  color: #ffffff;
+}
+.wrapper-checkout .form__client form .form__items button,
+.wrapper-checkout .form__client form .form__items .goback {
+  padding: 15px 30px;
+  background-color: #f1d354;
+  color: #ffffff;
+  float: right;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.wrapper-checkout .form__client form .form__items .goback {
+  float: left;
+}
+.wrapper-checkout .form__client .add-coupon small {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+}
+.wrapper-checkout .form__client .phuongthuctt {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+.wrapper-checkout .form__client .phuongthuctt__items {
+  padding: 0 10px;
+  width: calc(100% / 12 * 3);
+}
+@media screen and (max-width: 540px) {
+  .wrapper-checkout .form__client .phuongthuctt__items {
+    width: calc(100%/12*6);
+    margin-bottom: 20px;
+  }
+}
+.wrapper-checkout .form__client .phuongthuctt__items .wrap__info {
+  border: 2px solid #9b9b9b;
+  padding: 20px;
+  height: 100%;
+  transition: 0.3s all;
+}
+.wrapper-checkout .form__client .phuongthuctt__items .wrap__info img {
+  width: 100%;
+  height: auto;
+}
+.wrapper-checkout .form__client .phuongthuctt__items .wrap__info p {
+  margin-top: 10px;
+  font-size: 12px;
+  text-align: center;
+}
+.wrapper-checkout .form__client .phuongthuctt__items .wrap__info:hover {
+  border-color: #0ac9db;
+}
+.wrapper-checkout .form__client .phuongthuctt__items .wrap__info.active {
+  background-color: #0ac9db;
+  color: #ffffff;
+  border-color: #0ac9db;
+}
+.wrapper-checkout .form__client .form_nhap_the {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
 .wrapper-checkout .support-kh {
   width: 100%;
   background-color: #0ac9db;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.wrapper-checkout .book-details {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
+}
+.wrapper-checkout .book-details__info {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+}
+.wrapper-checkout .book-details__info h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.wrapper-checkout .book-details__info ul li {
+  padding: 10px 0;
+}
+.wrapper-checkout .book-details__info ul li span {
+  font-weight: bold;
+  font-size: 14px;
 }

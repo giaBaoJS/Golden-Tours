@@ -4,12 +4,30 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(90%, rgba(0, 0, 0, 1)));
+    background: -o-linear-gradient(right, transparent 0%, rgba(0, 0, 0, 1) 90%);
+    background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 1) 90%);
+    opacity: 0.5;
+  }
   h2 {
     color: #ffffff;
     font-size: 50px;
+    position: relative;
   }
   @include media(768px) {
     padding: 50px 0;
+    h2{
+      font-size: 36px;
+    }
   }
 }
 
@@ -35,8 +53,12 @@
 .wrapper-items-form {
   .item {
     padding: 20px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid #dfdfdf;
     .content {
       margin-left: 20px;
@@ -49,6 +71,22 @@
         border: none;
         &:focus {
           outline: none;
+        }
+        &::-webkit-input-placeholder {
+          color: #5191fa;
+          font-size: 14px;
+        }
+        &::-moz-placeholder {
+          color: #5191fa;
+          font-size: 14px;
+        }
+        &:-ms-input-placeholder {
+          color: #5191fa;
+          font-size: 14px;
+        }
+        &::-ms-input-placeholder {
+          color: #5191fa;
+          font-size: 14px;
         }
         &::placeholder {
           color: #5191fa;

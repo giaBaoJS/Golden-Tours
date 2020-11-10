@@ -2,7 +2,6 @@
   width: 170px;
   padding: 6px 20px;
   -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
   text-align: center;
@@ -13,6 +12,7 @@
   background-color: transparent;
   &:focus {
     outline: none;
+    -webkit-box-shadow: none;
     box-shadow: none;
   }
 }
@@ -30,12 +30,17 @@
   height: 50px;
   display: none;
   border-radius: 35px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border: 1px solid transparent;
   z-index: 99;
   &:hover {
-    background: #ceb200;
+    background-color: $white;
+    border-color: $primary2;
     i {
       top: 0px;
+      color: $primary2;
     }
   }
   i {
@@ -43,10 +48,14 @@
     margin: 0;
     position: relative;
     left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     top: 8px;
     font-size: 30px;
     font-weight: bold;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 }

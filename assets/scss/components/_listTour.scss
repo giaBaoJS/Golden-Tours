@@ -8,10 +8,14 @@
     position: relative;
     a {
       img {
+        -webkit-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
       }
       &:hover {
         img {
+          -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
           transform: scale(1.2);
         }
       }
@@ -50,6 +54,7 @@
       height: 48px;
       background-color: #cc0033;
       -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       right: -30px;
       top: -13px;
@@ -73,7 +78,11 @@
       }
     }
     &-top {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       margin-bottom: 10px;
       h3 {
@@ -87,7 +96,11 @@
       }
     }
     &-mid {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
       flex: 0 0 50%;
       margin-bottom: 30px;
       .list-star {
@@ -106,8 +119,14 @@
       }
     }
     &-bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
       justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       i {
         font-size: 14px;

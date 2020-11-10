@@ -5,7 +5,11 @@
     .step-check {
       margin-bottom: 50px;
       ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         li {
           width: calc(100% / 12 * 3);
@@ -44,8 +48,14 @@
             }
           }
           h2 {
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
             align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
             justify-content: center;
             margin-bottom: 0;
             height: 100%;
@@ -57,7 +67,11 @@
           }
         }
         @include media(768px) {
+          -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
           li {
             width: 100%;
@@ -77,6 +91,9 @@
   .form__client {
     .row {
       @include media(768px) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
         .col-lg-4 {
           margin-bottom: 30px;
@@ -89,8 +106,13 @@
       margin-bottom: 30px;
     }
     form {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       margin: 0 -10px;
       .form__items {
@@ -110,6 +132,8 @@
           padding: 10px 15px;
           border-radius: 5px;
           border: 1px solid #cccccc;
+          -webkit-transition: 0.3s all;
+          -o-transition: 0.3s all;
           transition: 0.3s all;
           &:focus {
             border-color: $primary;
@@ -134,7 +158,7 @@
           outline: none;
           cursor: pointer;
           border: none;
-          &.--next{
+          &.--next {
             float: right;
           }
         }
@@ -151,7 +175,10 @@
       }
     }
     .phuongthuctt {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       margin: 0 -10px;
       &__items {
@@ -172,6 +199,8 @@
           border: 2px solid #9b9b9b;
           padding: 20px;
           height: 100%;
+          -webkit-transition: 0.3s all;
+          -o-transition: 0.3s all;
           transition: 0.3s all;
           line-height: 1.5;
           img {
@@ -224,24 +253,35 @@
           margin-bottom: 20px;
         }
         .list__nganhang {
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
+          -ms-flex-wrap: wrap;
           flex-wrap: wrap;
           margin: 0 10px;
           .item {
             width: 20%;
             padding: 0 10px;
             margin-bottom: 10px;
-            @include media(540px){
-              width: calc(100%/12*6);
+            @include media(540px) {
+              width: calc(100% / 12 * 6);
             }
             .wrap-image {
               position: relative;
+              display: -webkit-box;
+              display: -ms-flexbox;
               display: flex;
+              -webkit-box-pack: center;
+              -ms-flex-pack: center;
               justify-content: center;
+              -webkit-box-align: center;
+              -ms-flex-align: center;
               align-items: center;
               padding: 10px;
               height: 100%;
               border: 1px solid #d1d1d1;
+              -webkit-transition: 0.3s all;
+              -o-transition: 0.3s all;
               transition: 0.3s all;
               &:hover {
                 border-color: $primary;
@@ -262,23 +302,23 @@
         }
       }
     }
-    .hoanthanh{
+    .hoanthanh {
       background-color: $white;
       padding: 40px 20px;
       text-align: center;
-      img{
+      img {
         width: 100px;
         height: auto;
         margin-bottom: 20px;
       }
-      h2{
+      h2 {
         margin-bottom: 20px;
         font-size: 25px;
         font-weight: bold;
         line-height: 1.4;
         color: $primary2;
       }
-      h4{
+      h4 {
         margin-bottom: 10px;
       }
     }
@@ -295,6 +335,7 @@
     margin-bottom: 20px;
   }
   .book-details {
+    -webkit-box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
     box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.4);
     &__info {
       h4 {

@@ -8,7 +8,7 @@
         display: flex;
         justify-content: center;
         li {
-          width: calc(100% / 12 * 4);
+          width: calc(100% / 12 * 3);
           text-align: center;
           position: relative;
           margin-right: 50px;
@@ -44,7 +44,9 @@
             }
           }
           h2 {
-            padding: 20px 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-bottom: 0;
             height: 100%;
             color: $white;
@@ -102,7 +104,8 @@
           margin-bottom: 10px;
         }
         input,
-        textarea {
+        textarea,
+        select {
           width: 100%;
           padding: 10px 15px;
           border-radius: 5px;
@@ -131,6 +134,9 @@
           outline: none;
           cursor: pointer;
           border: none;
+          &.--next{
+            float: right;
+          }
         }
         .goback {
           float: left;
@@ -150,41 +156,111 @@
       margin: 0 -10px;
       &__items {
         padding: 0 10px;
-        width: calc(100% / 12 * 3);
-        @include media(540px){
-          width: calc(100%/12*6);
+        width: 20%;
+        @include media(540px) {
+          width: calc(100% / 12 * 6);
           margin-bottom: 20px;
+        }
+        &.active {
+          .wrap__info {
+            background-color: $primary2;
+            color: $white;
+            border-color: $primary2;
+          }
         }
         .wrap__info {
           border: 2px solid #9b9b9b;
           padding: 20px;
           height: 100%;
           transition: 0.3s all;
+          line-height: 1.5;
           img {
             width: 100%;
             height: auto;
           }
-          p{
+          p {
             margin-top: 10px;
             font-size: 12px;
             text-align: center;
           }
-          &:hover{
-            border-color: $primary2;
-          }
-          &.active{
-            background-color: $primary2;
-            color: $white;
+          &:hover {
             border-color: $primary2;
           }
         }
       }
     }
-    .form_nhap_the{
+    .list-tab {
       margin-top: 20px;
+      margin-bottom: 20px;
       padding: 20px;
       background-color: $white;
       border-radius: 5px;
+      .tabs {
+        display: none;
+        .qr_choose {
+          h5 {
+            margin-bottom: 20px;
+            line-height: 1.5;
+          }
+          text-align: center;
+          b {
+            font-weight: bold;
+            font-size: 18px;
+          }
+          iframe {
+            @include media(540px) {
+              width: 100%;
+            }
+          }
+          .qrcode {
+            width: 300px;
+            height: auto;
+          }
+        }
+        h4 {
+          text-align: center;
+          font-size: 18px;
+          line-height: 1.4;
+          margin-bottom: 20px;
+        }
+        .list__nganhang {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 10px;
+          .item {
+            width: 20%;
+            padding: 0 10px;
+            margin-bottom: 10px;
+            @include media(540px){
+              width: calc(100%/12*6);
+            }
+            .wrap-image {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+              height: 100%;
+              border: 1px solid #d1d1d1;
+              transition: 0.3s all;
+              &:hover {
+                border-color: $primary;
+              }
+              img {
+                width: 100%;
+              }
+            }
+            &.active {
+              .wrap-image {
+                border-color: $primary;
+              }
+            }
+          }
+        }
+        &.active {
+          display: block;
+        }
+      }
     }
   }
   .support-kh {

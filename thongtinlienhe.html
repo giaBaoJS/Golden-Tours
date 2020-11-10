@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang chủ</title>
+    <title>Thông tin hành khách</title>
     <link
       rel="icon"
       type="image/png"
@@ -90,7 +90,7 @@
               <li class="active">
                 <h2>Điền thông tin <i class="fas fa-info-circle"></i></h2>
               </li>
-              <li>
+              <li class="active">
                 <h2>Hành khách <i class="fas fa-address-card"></i></h2>
               </li>
               <li>
@@ -104,8 +104,11 @@
           <div class="form__client">
             <div class="row">
               <div class="col-lg-8">
-                <h3>Thông tin liên hệ</h3>
+               
                 <form action="#">
+                  <div class="form__items-full">
+                    <h3>Thông tin hành khách 1</h3>
+                  </div>
                   <div class="form__items">
                     <label for="name">Họ và tên</label>
                     <input
@@ -115,11 +118,11 @@
                     />
                   </div>
                   <div class="form__items">
-                    <label for="name">Email</label>
+                    <label for="name">Địa chỉ</label>
                     <input
                       class="reset-apperance"
-                      placeholder="Nhập email"
-                      type="email"
+                      placeholder="Nhập địa chỉ"
+                      type="text"
                     />
                   </div>
                   <div class="form__items">
@@ -131,38 +134,68 @@
                     />
                   </div>
                   <div class="form__items">
-                    <label for="name">Thành phố</label>
-                    <input class="reset-apperance" type="text" />
+                    <label for="name">Giới tính</label>
+                    <select name="gender" id="gender">
+                      <option value="1">Nam</option>
+                      <option value="2">Nữ</option>
+                    </select>
                   </div>
-                  <div class="form__items form__items-full">
-                    <label for="name">Ghi chú</label>
-                    <textarea
+                  <div class="form__items">
+                    <label for="name">Quốc gia</label>
+                    <input class="reset-apperance" placeholder="Nhập tên quốc gia" type="text" />
+                  </div>
+                  <div class="form__items">
+                    <label for="name">Passport</label>
+                    <input class="reset-apperance" placeholder="Nhập passport" type="text" />
+                  </div>
+                  <div class="form__items-full">
+                    <h3>Thông tin hành khách 1</h3>
+                  </div>
+                  <div class="form__items">
+                    <label for="name">Họ và tên</label>
+                    <input
                       class="reset-apperance"
-                      name="ghichu"
-                      id="ghichu"
-                      cols="30"
-                      rows="10"
-                    ></textarea>
-                  </div>
-                  <div class="form__items form__items-full add-coupon">
-                    <h3 class="magiamgia">
-                      Mã Giảm giá <small>(nếu có)</small>
-                    </h3>
+                      placeholder="Nhập họ và tên"
+                      type="text"
+                    />
                   </div>
                   <div class="form__items">
-                    <input type="text " />
+                    <label for="name">Địa chỉ</label>
+                    <input
+                      class="reset-apperance"
+                      placeholder="Nhập địa chỉ"
+                      type="text"
+                    />
                   </div>
                   <div class="form__items">
-                    <a class="check-cp" href="#">Áp dụng</a>
+                    <label for="name">Số điện thoại</label>
+                    <input
+                      class="reset-apperance"
+                      placeholder="Nhập số điện thoại"
+                      type="email"
+                    />
+                  </div>
+                  <div class="form__items">
+                    <label for="name">Giới tính</label>
+                    <select name="gender" id="gender">
+                      <option value="1">Nam</option>
+                      <option value="2">Nữ</option>
+                    </select>
+                  </div>
+                  <div class="form__items">
+                    <label for="name">Quốc gia</label>
+                    <input class="reset-apperance" placeholder="Nhập tên quốc gia" type="text" />
+                  </div>
+                  <div class="form__items">
+                    <label for="name">Passport</label>
+                    <input class="reset-apperance" placeholder="Nhập passport" type="text" />
                   </div>
                   <div class="form__items">
                     <a class="goback" href="#">Trở về</a>
-                  </div>
-                  <div class="form__items">
-                    <button class="reset-apperance" type="submit">
-                      Tiếp tục
-                    </button>
-                  </div>
+                    </div>
+                    <div class="form__items">
+                     <button class="reset-apperance" type="submit">Tiếp tục</button>
+                    </div>
                 </form>
               </div>
               <div class="col-lg-4">

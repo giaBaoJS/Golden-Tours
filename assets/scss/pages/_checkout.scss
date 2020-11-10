@@ -262,6 +262,26 @@
         }
       }
     }
+    .hoanthanh{
+      background-color: $white;
+      padding: 40px 20px;
+      text-align: center;
+      img{
+        width: 100px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      h2{
+        margin-bottom: 20px;
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.4;
+        color: $primary2;
+      }
+      h4{
+        margin-bottom: 10px;
+      }
+    }
   }
   .support-kh {
     width: 100%;

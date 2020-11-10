@@ -3891,6 +3891,26 @@ html .mfp-wrap {
 .wrapper-checkout .form__client .list-tab .tabs.active {
   display: block;
 }
+.wrapper-checkout .form__client .hoanthanh {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.wrapper-checkout .form__client .hoanthanh img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+.wrapper-checkout .form__client .hoanthanh h2 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #0ac9db;
+}
+.wrapper-checkout .form__client .hoanthanh h4 {
+  margin-bottom: 10px;
+}
 .wrapper-checkout .support-kh {
   width: 100%;
   background-color: #0ac9db;

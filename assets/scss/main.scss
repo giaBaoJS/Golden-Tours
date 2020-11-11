@@ -10,7 +10,8 @@
 @import "./components/_listTour.scss";
 @import "./components/_filterNews.scss";
 @import "./components/_newsList.scss";
-@import "./components/comment";
+@import "./components/_comment";
+@import "./components/_login";
 //Page
 @import "./pages/_home.scss";
 @import "./pages/_tour.scss";
@@ -23,3 +24,4 @@
 @import "./pages/_tourDetail.scss";
 @import "./pages/_checkout.scss";
 @import "./pages/_404.scss";
+@import "./pages/_history.scss";

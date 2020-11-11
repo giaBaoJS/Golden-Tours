@@ -896,15 +896,15 @@ footer .copyright p {
 .filter-news form button {
   position: absolute;
   right: 0;
-  height: 35px;
-  width: 35px;
+  top: 0;
+  padding: 9px 15px;
   border: none;
   cursor: pointer;
   background-color: #0ac9db;
   border-radius: 3px;
 }
 .filter-news form button:hover {
-  background-color: #4880dc;
+  background-color: #f1d354;
 }
 .filter-news form button i {
   color: white;
@@ -924,6 +924,13 @@ footer .copyright p {
 }
 .filter-news .lasted-news {
   margin-bottom: 10px;
+}
+.filter-news .lasted-news a {
+  color: #000000;
+  transition: 0.3s all;
+}
+.filter-news .lasted-news a:hover {
+  color: #f1d354;
 }
 .filter-news .lasted-news .row {
   -webkit-box-align: center;

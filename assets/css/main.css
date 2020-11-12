@@ -350,8 +350,8 @@ table {
 }
 
 .header.--fixed {
-  -webkit-animation: fadeInDown 0.6s;
-          animation: fadeInDown 0.6s;
+  -webkit-animation: fadeInDown 0.6s both;
+          animation: fadeInDown 0.6s both;
   position: fixed;
   top: 0;
   left: 0;
@@ -1634,6 +1634,62 @@ footer .copyright p {
   .change-psw {
     padding: 60px 0;
   }
+}
+
+.sec-breadcrumb {
+  background-color: rgba(25, 25, 25, 0.1);
+}
+
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.breadcrumb li {
+  position: relative;
+}
+
+.breadcrumb li::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 6px;
+  height: 6px;
+  background-color: #f1d354;
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.breadcrumb li.--active a {
+  color: #000;
+  font-weight: bold;
+}
+
+.breadcrumb li:last-child a {
+  padding: 0;
+}
+
+.breadcrumb li:last-child::after {
+  display: none;
+}
+
+.breadcrumb a {
+  padding-right: 30px;
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: #f1d354;
 }
 
 .wrapper-home .about-us {
@@ -4194,7 +4250,8 @@ html .mfp-wrap {
 
 .is-slider .swiper-button-prev::after,
 .is-slider .swiper-button-next::after {
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   font-size: 22px;
   bottom: 0;
 }
@@ -4260,7 +4317,8 @@ html .mfp-wrap {
   left: 0;
   width: 100%;
   height: 100%;
-  font-family: FontAwesome;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
   font-size: 26px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.2);
@@ -4407,13 +4465,13 @@ html .mfp-wrap {
           transform: rotate(180deg);
 }
 
-.tour-dt__program .header {
+.tour-dt__program .item-header {
   padding: 17px 30px;
   overflow: hidden;
   cursor: pointer;
 }
 
-.tour-dt__program .header h5 {
+.tour-dt__program .item-header h5 {
   width: calc(100% - 17px);
   font-size: 16px;
   color: #1a2b48;
@@ -4495,7 +4553,7 @@ html .mfp-wrap {
           transform: rotate(180deg);
 }
 
-.tour-dt__faq .header {
+.tour-dt__faq .item-header {
   margin-bottom: 10px;
   overflow: hidden;
   padding-top: 30px;
@@ -4653,10 +4711,6 @@ html .mfp-wrap {
 }
 
 .tour-dt__booking {
-  position: -webkit-sticky;
-  position: sticky;
-  top: -35px;
-  right: 0;
   background-color: #fff;
   padding: 50px 0;
 }
@@ -4912,6 +4966,7 @@ html .mfp-wrap {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  width: 100%;
 }
 
 .widget-box .stm-star-rating-upper {
@@ -4922,7 +4977,8 @@ html .mfp-wrap {
 }
 
 .widget-box .stm-star-rating-upper:before {
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 'Font Awesome 5 Free';
+  font-weight: 900;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -4940,7 +4996,8 @@ html .mfp-wrap {
 }
 
 .widget-box .stm-star-rating-lower:before {
-  font: normal normal normal 14px/1 FontAwesome;
+  font: normal normal normal 14px/1 'Font Awesome 5 Free';
+  font-weight: 900;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
@@ -4987,7 +5044,7 @@ html .mfp-wrap {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  z-index: 9;
+  z-index: 100;
   display: none;
 }
 
@@ -5015,20 +5072,6 @@ html .mfp-wrap {
 
 @media screen and (max-width: 991px) {
   .book-mobile {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: #fff;
-    padding: 10px 15px;
-    border-top: 1px solid var(--light-grey-color, #eaeef3);
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    z-index: 9;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

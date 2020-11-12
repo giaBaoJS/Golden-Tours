@@ -154,7 +154,8 @@ html {
 		border-radius: 100%;
 		outline: 0;
 		&::after {
-			font-family: FontAwesome;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
 			font-size: 22px;
 			bottom: 0;
 		}
@@ -210,7 +211,8 @@ html {
 			left: 0;
 			width: 100%;
 			height: 100%;
-			font-family: FontAwesome;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 900;
 			font-size: 26px;
 			color: #fff;
 			background-color: rgba($color: #000000, $alpha: 0.2);
@@ -328,7 +330,7 @@ html {
 			}
 		}
 	}
-	.header {
+	.item-header {
 		padding: 17px 30px;
 		overflow: hidden;
 		cursor: pointer;
@@ -402,7 +404,7 @@ html {
 			}
 		}
 	}
-	.header {
+	.item-header {
 		margin-bottom: 10px;
 		overflow: hidden;
 		padding-top: 30px;
@@ -532,9 +534,6 @@ html {
 }
 // BOOKING FORM
 .tour-dt__booking {
-	position: sticky;
-	top: -35px;
-	right: 0;
 	background-color: #fff;
 	padding: 50px 0;
 }
@@ -728,6 +727,7 @@ html {
 		position: relative;
 		display: inline-block;
 		vertical-align: top;
+		width: 100%;
 	}
 	.stm-star-rating-upper {
 		position: absolute;
@@ -735,7 +735,8 @@ html {
 		left: -1px;
 		overflow: hidden;
 		&:before {
-			font: normal normal normal 14px/1 FontAwesome;
+			font: normal normal normal 14px/1 'Font Awesome 5 Free';
+			font-weight: 900;
 			font-size: inherit;
 			text-rendering: auto;
 			-webkit-font-smoothing: antialiased;
@@ -751,7 +752,8 @@ html {
 	.stm-star-rating-lower {
 		margin-left: -1px;
 		&:before {
-			font: normal normal normal 14px/1 FontAwesome;
+			font: normal normal normal 14px/1 'Font Awesome 5 Free';
+			font-weight: 900;
 			font-size: inherit;
 			text-rendering: auto;
 			-webkit-font-smoothing: antialiased;
@@ -791,7 +793,7 @@ html {
 	border-top: 1px solid #eaeef3;
 	align-items: center;
 	justify-content: space-between;
-	z-index: 9;
+	z-index: 100;
 	display: none;
 	.price-wrapper {
 		font-size: 14px;
@@ -814,19 +816,8 @@ html {
 }
 @include media(991px) {
 	.book-mobile {
-		position: fixed;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		background: #fff;
-		padding: 10px 15px;
-		border-top: 1px solid var(--light-grey-color, #eaeef3);
-		align-items: center;
-		justify-content: space-between;
-		z-index: 9;
 		display: flex;
 	}
-
 	.tour-dt-left {
 		padding: 100px 15px;
 		flex-basis: 100%;

@@ -60,10 +60,11 @@ jQuery(document).ready(function ($) {
 		}
 		$(window).on('scroll', function () {
 			if (scrollY >= headerOffsetTop + headerHeight) {
-				header.addClass('--fixed');
+				header.delay(100).addClass('--fixed');
+
 				header.next().css('margin-top', headerHeight);
 			} else {
-				header.removeClass('--fixed');
+				header.delay(500).removeClass('--fixed');
 				header.next().css('margin-top', 0);
 			}
 		});
@@ -105,6 +106,11 @@ jQuery(document).ready(function ($) {
 			pagination: {
 				el: pagination,
 				clickable: true,
+			},
+			on: {
+				init: function () {
+					console.log(this);
+				},
 			},
 		});
 	}

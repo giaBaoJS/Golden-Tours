@@ -15,6 +15,10 @@
 		<link rel="stylesheet" href="./assets/libs/css/magnific.css" />
 		<link rel="stylesheet" href="./assets/libs/css/wow.css" />
 		<link rel="stylesheet" href="./assets/libs/css/flatpickr.min.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/libs/light-gallery/lightgallery.min.css"
+		/>
 		<link rel="stylesheet" href="./assets/css/font.css" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
 	</head>
@@ -94,6 +98,16 @@
 						<h2>Chi tiết</h2>
 					</div>
 				</section>
+				<div class="sec-breadcrumb">
+					<div class="container">
+						<ul class="breadcrumb">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Tour</a></li>
+							<li class="--active"><a href="#">Tour Detail</a></li>
+						</ul>
+					</div>
+				</div>
+
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-sm-12 col-md-9 tour-dt-left">
@@ -820,29 +834,6 @@
 															</div>
 														</div>
 													</div>
-													<div class="guest-wrapper">
-														<div class="check-in-wrapper">
-															<label>Infant</label>
-															<div class="render">Age 0-5</div>
-														</div>
-														<div class="select-wrapper">
-															<div class="st-number-wrapper qtt-picker">
-																<span class="prev">-</span>
-
-																<input
-																	type="text"
-																	name="infant_number"
-																	value="0"
-																	class="form-control qtt-input"
-																	autocomplete="off"
-																	readonly=""
-																	min="0"
-																	max="10"
-																/>
-																<span class="next">+</span>
-															</div>
-														</div>
-													</div>
 												</div>
 												<div class="submit-group">
 													<button
@@ -995,6 +986,7 @@
 		<script src="./assets/libs/js/magnific.js"></script>
 		<script src="./assets/libs/js/wow.min.js"></script>
 		<script src="./assets/libs/js/flatpickr.js"></script>
+		<script src="./assets/libs/light-gallery/lightgallery-all.min.js"></script>
 		<script src="https://npmcdn.com/flatpickr/dist/l10n/vn.js"></script>
 		<script>
 			new WOW().init();

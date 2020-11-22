@@ -1399,38 +1399,112 @@ footer .copyright p {
   }
 }
 
-.wraper-mail {
-  background-color: #f8f8f8;
-  font-family: sans-serif;
-  padding: 15px;
+.wapper-mail .title-1 {
+  text-align: center;
 }
-.wraper-mail .header {
-  box-shadow: 0px 1.7px 0.3px #f7f7f7;
+.wapper-mail .section-1 {
+  height: 40px;
+  background: #0CC9DA;
+  color: #fff;
+  padding-top: 0.2rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
 }
-.wraper-mail .box-content {
-  max-width: 1000px;
-  margin: auto;
-  background: #ffffff;
+.wapper-mail .section-2 {
+  padding-left: 2rem;
+  padding-right: 4rem;
 }
-.wraper-mail .box-content .logo {
-  width: 170px;
-  margin: 0 auto;
+.wapper-mail .section-2 p span {
+  font-weight: 600;
 }
-.wraper-mail .box-content .box-text {
-  background-color: #fff;
-  padding: 5px 20px;
-  color: #000;
-  border-radius: 0px 0px 2px 2px;
+.wapper-mail .section-2 .text-1 {
+  line-height: 30px;
 }
-.wraper-mail .box-content .box-text .box-1 {
-  padding: 35px 15px;
+.wapper-mail .boder {
+  border: 1px solid #8f8e8e;
 }
-.wraper-mail .box-content .box-text .box-1 p {
-  margin: 0;
-  font-size: 16px;
+.wapper-mail .boder .header-mail {
+  padding-top: 1rem;
+  border-bottom: 1px solid #8f8e8e;
+  margin-bottom: 1rem;
 }
-.wraper-mail .box-content .box-text .box-2 {
-  padding: 10px 15px;
+.wapper-mail .boder .header-mail ul li span {
+  color: #747474;
+  font-weight: 300;
+}
+.wapper-mail .footer-main {
+  padding: 20px 0px !important;
+}
+.wapper-mail .footer-main h3 {
+  margin-bottom: 5px;
+}
+.wapper-mail .footer-main img {
+  margin-bottom: 2px;
+}
+
+.title-mail h4 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #58595b;
+}
+
+table {
+  border: 1px solid #58595b;
+  text-align: center;
+}
+table th {
+  border-right: 1px solid #58595b;
+}
+table td {
+  border-right: 1px solid #58595b;
+}
+
+button {
+  width: 200px;
+  background: #0CC9DA;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 2rem;
+  margin-left: 26rem;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  background: #0cacbb;
+}
+
+.thanh-toan p span {
+  font-weight: 600;
+}
+
+.wraper-mail-checkout .section-1 {
+  height: 40px;
+  background: #0CC9DA;
+  color: #fff;
+  padding-top: 0.2rem;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+}
+.wraper-mail-checkout button {
+  width: 200px;
+  background: #0CC9DA;
+  color: #fff;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 2rem;
+  margin-left: 26rem;
+  text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.wraper-mail-checkout button:hover {
+  background: #0cacbb;
 }
 
 .sec-breadcrumb {
